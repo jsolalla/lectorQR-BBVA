@@ -52,6 +52,10 @@ class HomeViewController: UIViewController {
         
         viewTransactions.rx.tapGesture().when(.recognized) .subscribe(onNext: { _ in
             self.tapView(self.viewTransactions)
+            delay(seconds: 0.2, completion: {
+                let recordsViewController = self.storyboard!.instantiateViewController(withIdentifier: "RecordsViewController") as! RecordsViewController
+                self.navigationController?.pushViewController(recordsViewController, animated: true)
+            })
         }).disposed(by: disposeBag)
         
         viewInventory.rx.tapGesture().when(.recognized) .subscribe(onNext: { _ in
