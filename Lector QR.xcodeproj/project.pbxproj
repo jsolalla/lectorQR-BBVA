@@ -3,18 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 48;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CFE4A1D4D7DC5E92351BB8B7 /* Pods_Lector_QR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AAF7E002C3215E989E83B37 /* Pods_Lector_QR.framework */; };
 		EA10023721435E5E0087E439 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA10023621435E5E0087E439 /* AppDelegate.swift */; };
 		EA10023921435E5E0087E439 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA10023821435E5E0087E439 /* ViewController.swift */; };
 		EA10023C21435E5E0087E439 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA10023A21435E5E0087E439 /* Main.storyboard */; };
 		EA10023E21435E600087E439 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA10023D21435E600087E439 /* Assets.xcassets */; };
 		EA10024121435E600087E439 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA10023F21435E600087E439 /* LaunchScreen.storyboard */; };
+		EA787A6F21438827007DB83E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA787A6E21438827007DB83E /* LoginViewModel.swift */; };
+		EA787A7121438830007DB83E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA787A7021438830007DB83E /* HomeViewModel.swift */; };
+		EA787A7321438839007DB83E /* CreateAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA787A7221438839007DB83E /* CreateAccountViewModel.swift */; };
+		EA787A7521438859007DB83E /* ProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA787A7421438859007DB83E /* ProductsViewModel.swift */; };
+		EA787A772143888E007DB83E /* PaymentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA787A762143888E007DB83E /* PaymentViewModel.swift */; };
+		EA787A7A214388FD007DB83E /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA787A79214388FD007DB83E /* Color.swift */; };
+		EA787A7C21438904007DB83E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA787A7B21438904007DB83E /* Constants.swift */; };
+		EA787A7E21438960007DB83E /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA787A7D2143895F007DB83E /* API.swift */; };
+		EA787A8021438BA8007DB83E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA787A7F21438BA8007DB83E /* Extensions.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		23DE0A61685AE87692AEF85C /* Pods-Lector QR.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lector QR.release.xcconfig"; path = "Pods/Target Support Files/Pods-Lector QR/Pods-Lector QR.release.xcconfig"; sourceTree = "<group>"; };
+		350C64B25604F0C12A1CF723 /* Pods-Lector QR.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lector QR.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Lector QR/Pods-Lector QR.debug.xcconfig"; sourceTree = "<group>"; };
+		6AAF7E002C3215E989E83B37 /* Pods_Lector_QR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lector_QR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA10023321435E5E0087E439 /* Lector QR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lector QR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA10023621435E5E0087E439 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		EA10023821435E5E0087E439 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +35,15 @@
 		EA10023D21435E600087E439 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA10024021435E600087E439 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EA10024221435E600087E439 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EA787A6E21438827007DB83E /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		EA787A7021438830007DB83E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
+		EA787A7221438839007DB83E /* CreateAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewModel.swift; sourceTree = "<group>"; };
+		EA787A7421438859007DB83E /* ProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewModel.swift; sourceTree = "<group>"; };
+		EA787A762143888E007DB83E /* PaymentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PaymentViewModel.swift; sourceTree = "<group>"; };
+		EA787A79214388FD007DB83E /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
+		EA787A7B21438904007DB83E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EA787A7D2143895F007DB83E /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
+		EA787A7F21438BA8007DB83E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +51,29 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CFE4A1D4D7DC5E92351BB8B7 /* Pods_Lector_QR.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		44CC492B1F49A15A64054742 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				350C64B25604F0C12A1CF723 /* Pods-Lector QR.debug.xcconfig */,
+				23DE0A61685AE87692AEF85C /* Pods-Lector QR.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		EA10022A21435E5E0087E439 = {
 			isa = PBXGroup;
 			children = (
 				EA10023521435E5E0087E439 /* Lector QR */,
 				EA10023421435E5E0087E439 /* Products */,
+				44CC492B1F49A15A64054742 /* Pods */,
+				F924D7183E909C23A45C20DB /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -55,13 +89,70 @@
 			isa = PBXGroup;
 			children = (
 				EA10023621435E5E0087E439 /* AppDelegate.swift */,
-				EA10023821435E5E0087E439 /* ViewController.swift */,
-				EA10023A21435E5E0087E439 /* Main.storyboard */,
-				EA10023D21435E600087E439 /* Assets.xcassets */,
 				EA10023F21435E600087E439 /* LaunchScreen.storyboard */,
 				EA10024221435E600087E439 /* Info.plist */,
+				EA787A78214388A0007DB83E /* Config */,
+				EA787A6D214375C0007DB83E /* Model */,
+				EA787A6C214375A2007DB83E /* View */,
+				EA787A6A21437580007DB83E /* ViewModel */,
+				EA787A6B21437592007DB83E /* Repository */,
+				EA10023D21435E600087E439 /* Assets.xcassets */,
 			);
 			path = "Lector QR";
+			sourceTree = "<group>";
+		};
+		EA787A6A21437580007DB83E /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EA787A6E21438827007DB83E /* LoginViewModel.swift */,
+				EA787A7021438830007DB83E /* HomeViewModel.swift */,
+				EA787A7221438839007DB83E /* CreateAccountViewModel.swift */,
+				EA787A7421438859007DB83E /* ProductsViewModel.swift */,
+				EA787A762143888E007DB83E /* PaymentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EA787A6B21437592007DB83E /* Repository */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Repository;
+			sourceTree = "<group>";
+		};
+		EA787A6C214375A2007DB83E /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA10023821435E5E0087E439 /* ViewController.swift */,
+				EA10023A21435E5E0087E439 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EA787A6D214375C0007DB83E /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EA787A78214388A0007DB83E /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				EA787A7D2143895F007DB83E /* API.swift */,
+				EA787A79214388FD007DB83E /* Color.swift */,
+				EA787A7B21438904007DB83E /* Constants.swift */,
+				EA787A7F21438BA8007DB83E /* Extensions.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		F924D7183E909C23A45C20DB /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				6AAF7E002C3215E989E83B37 /* Pods_Lector_QR.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +162,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = EA10024521435E600087E439 /* Build configuration list for PBXNativeTarget "Lector QR" */;
 			buildPhases = (
+				03DF720AD47EB02CB98C8887 /* [CP] Check Pods Manifest.lock */,
 				EA10022F21435E5E0087E439 /* Sources */,
 				EA10023021435E5E0087E439 /* Frameworks */,
 				EA10023121435E5E0087E439 /* Resources */,
+				AC588A65879371C9C4341AE5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -96,11 +189,12 @@
 				TargetAttributes = {
 					EA10023221435E5E0087E439 = {
 						CreatedOnToolsVersion = 9.4.1;
+						ProvisioningStyle = Automatic;
 					};
 				};
 			};
 			buildConfigurationList = EA10022E21435E5E0087E439 /* Build configuration list for PBXProject "Lector QR" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 8.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -130,13 +224,79 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		03DF720AD47EB02CB98C8887 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Lector QR-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AC588A65879371C9C4341AE5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Lector QR/Pods-Lector QR-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/ModelMapper/Mapper.framework",
+				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
+				"${BUILT_PRODUCTS_DIR}/QRCode/QRCode.framework",
+				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Mapper.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QRCode.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Lector QR/Pods-Lector QR-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		EA10022F21435E5E0087E439 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA787A7521438859007DB83E /* ProductsViewModel.swift in Sources */,
 				EA10023921435E5E0087E439 /* ViewController.swift in Sources */,
+				EA787A7321438839007DB83E /* CreateAccountViewModel.swift in Sources */,
 				EA10023721435E5E0087E439 /* AppDelegate.swift in Sources */,
+				EA787A7E21438960007DB83E /* API.swift in Sources */,
+				EA787A6F21438827007DB83E /* LoginViewModel.swift in Sources */,
+				EA787A7A214388FD007DB83E /* Color.swift in Sources */,
+				EA787A772143888E007DB83E /* PaymentViewModel.swift in Sources */,
+				EA787A7121438830007DB83E /* HomeViewModel.swift in Sources */,
+				EA787A8021438BA8007DB83E /* Extensions.swift in Sources */,
+				EA787A7C21438904007DB83E /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -270,23 +430,20 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 11.4;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
 		};
 		EA10024621435E600087E439 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 350C64B25604F0C12A1CF723 /* Pods-Lector QR.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U4B5SM67ER;
 				INFOPLIST_FILE = "Lector QR/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.minttcode.Lector-QR";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
@@ -296,15 +453,13 @@
 		};
 		EA10024721435E600087E439 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 23DE0A61685AE87692AEF85C /* Pods-Lector QR.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = U4B5SM67ER;
 				INFOPLIST_FILE = "Lector QR/Info.plist";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "com.minttcode.Lector-QR";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
