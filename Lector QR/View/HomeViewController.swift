@@ -40,6 +40,10 @@ class HomeViewController: UIViewController {
         
         viewAccounts.rx.tapGesture().when(.recognized) .subscribe(onNext: { _ in
             self.tapView(self.viewAccounts)
+            delay(seconds: 0.2, completion: {
+                let accountViewController = self.storyboard!.instantiateViewController(withIdentifier: "AccountViewController") as! AccountViewController
+                self.navigationController?.pushViewController(accountViewController, animated: true)
+            })
         }).disposed(by: disposeBag)
         
         viewPay.rx.tapGesture().when(.recognized) .subscribe(onNext: { _ in
@@ -56,8 +60,13 @@ class HomeViewController: UIViewController {
         
         viewAccount.rx.tapGesture().when(.recognized) .subscribe(onNext: { _ in
             self.tapView(self.viewAccount)
+            delay(seconds: 0.2, completion: {
+                let transactionViewController = self.storyboard!.instantiateViewController(withIdentifier: "TransactionViewController") as! TransactionViewController
+                self.navigationController?.pushViewController(transactionViewController, animated: true)
+            })
         }).disposed(by: disposeBag)
         
+        setUpNavigationBar(color: .clear)
     }
 
     override func viewDidLayoutSubviews() {

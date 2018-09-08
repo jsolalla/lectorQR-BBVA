@@ -193,7 +193,7 @@ extension UIViewController {
         viewTapped.layer.add(animation, forKey: nil)
     }
     
-    public func setUpNavigationBar(title: String = "") {
+    public func setUpNavigationBar(title: String = "", color: UIColor? = nil) {
         
         let backImage = UIImage(named: "back")
         
@@ -203,7 +203,7 @@ extension UIViewController {
         navigationController?.navigationBar.backIndicatorTransitionMaskImage = backImage
         navigationController?.navigationBar.backItem?.title = " "
         navigationController?.navigationBar.titleTextAttributes = [NSAttributedStringKey.foregroundColor: UIColor.QR.mediumBlue]
-        navigationController?.navigationBar.barTintColor = UIColor.white
+        navigationController?.navigationBar.barTintColor = color ?? UIColor.white
         navigationController?.navigationBar.tintColor = UIColor.QR.mediumBlue
         navigationController?.navigationBar.topItem?.title = title
         navigationController?.navigationBar.isTranslucent = false
@@ -317,6 +317,13 @@ extension UIView {
     
     func round(corners: UIRectCorner, radius: CGFloat, borderColor: UIColor, borderWidth: CGFloat) {
         _ = _round(corners: corners, radius: radius)
+    }
+    
+    func addBottomBorder(_ color: CGColor, borderWidth: CGFloat = CGFloat(1)) {
+        let border = CALayer()
+        border.backgroundColor = color
+        border.frame = CGRect(x: 0, y: frame.size.height - borderWidth, width: self.frame.size.width, height: borderWidth)
+        self.layer.addSublayer(border)
     }
     
 }

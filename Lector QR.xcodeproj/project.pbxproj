@@ -28,6 +28,10 @@
 		EA787A932143C749007DB83E /* SignUpBusinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA787A922143C749007DB83E /* SignUpBusinessViewController.swift */; };
 		EA787A9521440762007DB83E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA787A9421440762007DB83E /* HomeViewController.swift */; };
 		EA787A982144106B007DB83E /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA787A972144106B007DB83E /* GradientView.swift */; };
+		EA787A9A2144387C007DB83E /* AccountViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA787A992144387C007DB83E /* AccountViewController.swift */; };
+		EA787A9C21445CDC007DB83E /* TransactionTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA787A9B21445CDC007DB83E /* TransactionTableCell.swift */; };
+		EA787A9E21445CF7007DB83E /* AccountDetailTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA787A9D21445CF7007DB83E /* AccountDetailTableCell.swift */; };
+		EA787AA0214463F9007DB83E /* TransactionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA787A9F214463F9007DB83E /* TransactionViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -56,6 +60,10 @@
 		EA787A922143C749007DB83E /* SignUpBusinessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpBusinessViewController.swift; sourceTree = "<group>"; };
 		EA787A9421440762007DB83E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		EA787A972144106B007DB83E /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
+		EA787A992144387C007DB83E /* AccountViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountViewController.swift; sourceTree = "<group>"; };
+		EA787A9B21445CDC007DB83E /* TransactionTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionTableCell.swift; sourceTree = "<group>"; };
+		EA787A9D21445CF7007DB83E /* AccountDetailTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AccountDetailTableCell.swift; sourceTree = "<group>"; };
+		EA787A9F214463F9007DB83E /* TransactionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransactionViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -141,6 +149,8 @@
 				EA787A902143C395007DB83E /* SignUpCardViewController.swift */,
 				EA787A922143C749007DB83E /* SignUpBusinessViewController.swift */,
 				EA787A9421440762007DB83E /* HomeViewController.swift */,
+				EA787A992144387C007DB83E /* AccountViewController.swift */,
+				EA787A9F214463F9007DB83E /* TransactionViewController.swift */,
 				EA10023A21435E5E0087E439 /* Main.storyboard */,
 			);
 			path = View;
@@ -169,6 +179,8 @@
 			isa = PBXGroup;
 			children = (
 				EA787A972144106B007DB83E /* GradientView.swift */,
+				EA787A9D21445CF7007DB83E /* AccountDetailTableCell.swift */,
+				EA787A9B21445CDC007DB83E /* TransactionTableCell.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -316,6 +328,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EA787A9C21445CDC007DB83E /* TransactionTableCell.swift in Sources */,
+				EA787AA0214463F9007DB83E /* TransactionViewController.swift in Sources */,
 				EA787A7521438859007DB83E /* ProductsViewModel.swift in Sources */,
 				EA787A7321438839007DB83E /* CreateAccountViewModel.swift in Sources */,
 				EA10023721435E5E0087E439 /* AppDelegate.swift in Sources */,
@@ -324,7 +338,9 @@
 				EA787A982144106B007DB83E /* GradientView.swift in Sources */,
 				EA787A8F2143B581007DB83E /* SignUpViewController.swift in Sources */,
 				EA787A912143C395007DB83E /* SignUpCardViewController.swift in Sources */,
+				EA787A9A2144387C007DB83E /* AccountViewController.swift in Sources */,
 				EA787A7A214388FD007DB83E /* Color.swift in Sources */,
+				EA787A9E21445CF7007DB83E /* AccountDetailTableCell.swift in Sources */,
 				EA787A772143888E007DB83E /* PaymentViewModel.swift in Sources */,
 				EA787A7121438830007DB83E /* HomeViewModel.swift in Sources */,
 				EA787A932143C749007DB83E /* SignUpBusinessViewController.swift in Sources */,
