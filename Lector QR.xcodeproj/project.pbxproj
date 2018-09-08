@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		CFE4A1D4D7DC5E92351BB8B7 /* Pods_Lector_QR.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6AAF7E002C3215E989E83B37 /* Pods_Lector_QR.framework */; };
 		EA10023721435E5E0087E439 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA10023621435E5E0087E439 /* AppDelegate.swift */; };
-		EA10023921435E5E0087E439 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA10023821435E5E0087E439 /* ViewController.swift */; };
 		EA10023C21435E5E0087E439 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA10023A21435E5E0087E439 /* Main.storyboard */; };
 		EA10023E21435E600087E439 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA10023D21435E600087E439 /* Assets.xcassets */; };
 		EA10024121435E600087E439 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EA10023F21435E600087E439 /* LaunchScreen.storyboard */; };
@@ -22,6 +21,13 @@
 		EA787A7C21438904007DB83E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA787A7B21438904007DB83E /* Constants.swift */; };
 		EA787A7E21438960007DB83E /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA787A7D2143895F007DB83E /* API.swift */; };
 		EA787A8021438BA8007DB83E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA787A7F21438BA8007DB83E /* Extensions.swift */; };
+		EA787A8221439890007DB83E /* Defaults.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA787A8121439890007DB83E /* Defaults.swift */; };
+		EA787A8421439B21007DB83E /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA787A8321439B21007DB83E /* LoginViewController.swift */; };
+		EA787A8F2143B581007DB83E /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA787A8E2143B581007DB83E /* SignUpViewController.swift */; };
+		EA787A912143C395007DB83E /* SignUpCardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA787A902143C395007DB83E /* SignUpCardViewController.swift */; };
+		EA787A932143C749007DB83E /* SignUpBusinessViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA787A922143C749007DB83E /* SignUpBusinessViewController.swift */; };
+		EA787A9521440762007DB83E /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA787A9421440762007DB83E /* HomeViewController.swift */; };
+		EA787A982144106B007DB83E /* GradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA787A972144106B007DB83E /* GradientView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +36,6 @@
 		6AAF7E002C3215E989E83B37 /* Pods_Lector_QR.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lector_QR.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA10023321435E5E0087E439 /* Lector QR.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Lector QR.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		EA10023621435E5E0087E439 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		EA10023821435E5E0087E439 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		EA10023B21435E5E0087E439 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EA10023D21435E600087E439 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EA10024021435E600087E439 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -44,6 +49,13 @@
 		EA787A7B21438904007DB83E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EA787A7D2143895F007DB83E /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
 		EA787A7F21438BA8007DB83E /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		EA787A8121439890007DB83E /* Defaults.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Defaults.swift; sourceTree = "<group>"; };
+		EA787A8321439B21007DB83E /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		EA787A8E2143B581007DB83E /* SignUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
+		EA787A902143C395007DB83E /* SignUpCardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpCardViewController.swift; sourceTree = "<group>"; };
+		EA787A922143C749007DB83E /* SignUpBusinessViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpBusinessViewController.swift; sourceTree = "<group>"; };
+		EA787A9421440762007DB83E /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		EA787A972144106B007DB83E /* GradientView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GradientView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -123,7 +135,12 @@
 		EA787A6C214375A2007DB83E /* View */ = {
 			isa = PBXGroup;
 			children = (
-				EA10023821435E5E0087E439 /* ViewController.swift */,
+				EA787A9621441044007DB83E /* Helper */,
+				EA787A8321439B21007DB83E /* LoginViewController.swift */,
+				EA787A8E2143B581007DB83E /* SignUpViewController.swift */,
+				EA787A902143C395007DB83E /* SignUpCardViewController.swift */,
+				EA787A922143C749007DB83E /* SignUpBusinessViewController.swift */,
+				EA787A9421440762007DB83E /* HomeViewController.swift */,
 				EA10023A21435E5E0087E439 /* Main.storyboard */,
 			);
 			path = View;
@@ -143,8 +160,17 @@
 				EA787A79214388FD007DB83E /* Color.swift */,
 				EA787A7B21438904007DB83E /* Constants.swift */,
 				EA787A7F21438BA8007DB83E /* Extensions.swift */,
+				EA787A8121439890007DB83E /* Defaults.swift */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		EA787A9621441044007DB83E /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				EA787A972144106B007DB83E /* GradientView.swift */,
+			);
+			path = Helper;
 			sourceTree = "<group>";
 		};
 		F924D7183E909C23A45C20DB /* Frameworks */ = {
@@ -261,6 +287,8 @@
 				"${BUILT_PRODUCTS_DIR}/Moya/Moya.framework",
 				"${BUILT_PRODUCTS_DIR}/QRCode/QRCode.framework",
 				"${BUILT_PRODUCTS_DIR}/Result/Result.framework",
+				"${BUILT_PRODUCTS_DIR}/RxCocoa/RxCocoa.framework",
+				"${BUILT_PRODUCTS_DIR}/RxGesture/RxGesture.framework",
 				"${BUILT_PRODUCTS_DIR}/RxSwift/RxSwift.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
@@ -272,6 +300,8 @@
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Moya.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/QRCode.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Result.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxCocoa.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxGesture.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RxSwift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,15 +317,21 @@
 			buildActionMask = 2147483647;
 			files = (
 				EA787A7521438859007DB83E /* ProductsViewModel.swift in Sources */,
-				EA10023921435E5E0087E439 /* ViewController.swift in Sources */,
 				EA787A7321438839007DB83E /* CreateAccountViewModel.swift in Sources */,
 				EA10023721435E5E0087E439 /* AppDelegate.swift in Sources */,
 				EA787A7E21438960007DB83E /* API.swift in Sources */,
 				EA787A6F21438827007DB83E /* LoginViewModel.swift in Sources */,
+				EA787A982144106B007DB83E /* GradientView.swift in Sources */,
+				EA787A8F2143B581007DB83E /* SignUpViewController.swift in Sources */,
+				EA787A912143C395007DB83E /* SignUpCardViewController.swift in Sources */,
 				EA787A7A214388FD007DB83E /* Color.swift in Sources */,
 				EA787A772143888E007DB83E /* PaymentViewModel.swift in Sources */,
 				EA787A7121438830007DB83E /* HomeViewModel.swift in Sources */,
+				EA787A932143C749007DB83E /* SignUpBusinessViewController.swift in Sources */,
+				EA787A9521440762007DB83E /* HomeViewController.swift in Sources */,
+				EA787A8221439890007DB83E /* Defaults.swift in Sources */,
 				EA787A8021438BA8007DB83E /* Extensions.swift in Sources */,
+				EA787A8421439B21007DB83E /* LoginViewController.swift in Sources */,
 				EA787A7C21438904007DB83E /* Constants.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
