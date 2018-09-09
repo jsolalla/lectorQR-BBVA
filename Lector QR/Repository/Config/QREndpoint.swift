@@ -16,6 +16,8 @@ fileprivate let POST_FORM: ParameterEncoding = URLEncoding.httpBody
 enum QREndpoint {
     case signUp(user: User)
     case products(userId: String)
+    case conciliate(numericKey: String, amount: Double, email: String, clabe: String, idDevice: String)
+    case transactions(device: String)
 }
 
 extension QREndpoint: TargetType {
@@ -28,6 +30,10 @@ extension QREndpoint: TargetType {
         switch self {
         case .signUp:
             return "/user"
+        case .conciliate:
+            return "/conciliacion"
+        case .transactions(let device):
+            return "/transaccion/device/\(device)"
         case .products(let userId):
             return "/producto/user/\(userId)"
         }
@@ -35,7 +41,7 @@ extension QREndpoint: TargetType {
     
     var method: Moya.Method {
         switch self {
-        case .signUp:
+        case .signUp, .conciliate:
             return .post
         default:
             return .get
@@ -56,6 +62,14 @@ extension QREndpoint: TargetType {
                  QRParams.phone: user.mobileNumber,
                  QRParams.password: user.password,
                  QRParams.accounts: [[QRParams.clabe: user.clabe]]
+                ], encoding: POST_ENCODING)
+        case .conciliate(let numericKey, let amount, let email, let clabe, let idDevice):
+            return .requestParameters(parameters:
+                [QRParams.alfanumerica: numericKey,
+                 QRParams.amount: amount,
+                 QRParams.account: [QRParams.clabe: clabe],
+                 QRParams.email: email,
+                 QRParams.idDevice: idDevice
                 ], encoding: POST_ENCODING)
         default:
             return .requestPlain

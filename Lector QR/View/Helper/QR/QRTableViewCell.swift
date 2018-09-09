@@ -9,12 +9,17 @@
 import UIKit
 import QRCode
 
+protocol QRTableViewCellDelegate: class {
+    func conciliate(transaction: Transaction)
+}
+
 class QRTableViewCell: UITableViewCell {
 
     @IBOutlet weak var gradientView: GradientView!
     @IBOutlet weak var qrImageView: UIImageView!
     @IBOutlet weak var btnFinalize: UIButton!
     
+    weak var delegate: QRTableViewCellDelegate?
     var amount = 0.0
     
     override func awakeFromNib() {
@@ -43,7 +48,13 @@ class QRTableViewCell: UITableViewCell {
     }
 
     @IBAction func finalize(_ sender: UIButton) {
-    
+        let account = Defaults.getBusiness?.clabe ?? ""
+        let businessName = Defaults.getBusiness?.business ?? ""
+        let transaction = Transaction()
+        transaction.alfanumerica = "Pago \(businessName)"
+        transaction.clabe = account
+        transaction.amount = amount
+        delegate?.conciliate(transaction: transaction)
     }
     
 }

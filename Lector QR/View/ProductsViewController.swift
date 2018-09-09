@@ -60,6 +60,7 @@ class ProductsViewController: UIViewController {
             let total = products.filter { $0.selected }.map { $0.price }.reduce(0, +)
             qrPayment.amount = total
             qrPayment.products = products.filter { $0.selected }
+            qrPayment.navigation = navigationController
         }
         
         self.present(navigation, animated: true, completion: nil)

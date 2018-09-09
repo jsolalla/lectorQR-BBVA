@@ -7,11 +7,16 @@
 //
 
 import UIKit
+import RxSwift
 
 class QRViewController: UITableViewController {
 
+    let userRepository = UserRepository()
+    let disposeBag = DisposeBag.init()
+    
     var products: [Product] = []
     var amount = 0.0
+    var navigation: UINavigationController?
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -61,6 +66,7 @@ class QRViewController: UITableViewController {
         } else {
             let cell = tableView.dequeueReusableCell(withIdentifier: "QRTableViewCell", for: indexPath) as! QRTableViewCell
             cell.amount = amount
+            cell.delegate = self
             return cell
         }
         
@@ -84,6 +90,32 @@ class QRViewController: UITableViewController {
             return 120
         } else {
             return 460
+        }
+    }
+    
+}
+
+extension QRViewController: QRTableViewCellDelegate {
+    
+    func conciliate(transaction: Transaction) {
+        
+        showAsyncActivityIndicator(in: navigationController!.view) { (activityIndicator) in
+            delay(seconds: 1.0, completion: {
+                self.userRepository.conciliate(transaction).bind(onNext: { (resultNewUser) in
+                    
+                    if case .error(let error) = resultNewUser {
+                        self.showAlert("Error", message: error.localizedDescription)
+                    }
+                    
+                    if case .success(_) = resultNewUser {
+                        self.navigation?.popToRootViewController(animated: false)
+                        self.dismiss(animated: true, completion: nil)
+                    }
+                    
+                    activityIndicator.removeFromSuperview()
+                    
+                }).disposed(by: self.disposeBag)
+            })
         }
     }
     

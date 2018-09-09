@@ -47,7 +47,7 @@ class PaymentViewController: UIViewController {
         let navigation = storyboard!.instantiateViewController(withIdentifier: "QRNavigation") as! UINavigationController
         
         if let qrPayment = navigation.childViewControllers.first as? QRViewController {
-            
+            qrPayment.navigation = navigationController
         }
         
         self.present(navigation, animated: true, completion: nil)

@@ -80,4 +80,37 @@ class UserRepository: BaseRepository {
         }
     }
     
+    func conciliate(_ transaction: Transaction) -> Observable<APIResult<Transaction>> {
+        
+        return Observable.create { [weak self] observer in
+            
+            if let strongSelf = self {
+                
+                _ = strongSelf.provider.rx.request(.conciliate(numericKey: transaction.alfanumerica, amount: transaction.amount, email: transaction.email, clabe: transaction.clabe, idDevice: UIDevice.current.identifierForVendor!.uuidString))
+                    .filterSuccessfulStatusCodes()
+                    .mapJSON()
+                    .subscribe { event in
+                        switch event {
+                        case .success(let dict):
+                            
+                            if let transaction = dict as? [String:Any] {
+                                let userOBJ = Transaction(transaction)
+                                observer.onNext(APIResult.success(userOBJ))
+                                observer.onCompleted()
+                            } else {
+                                observer.onNext(APIResult.error(strongSelf.getError(for: "Could not parse")))
+                                observer.onCompleted()
+                            }
+                            
+                        case .error(let error):
+                            observer.onNext(APIResult.error(error))
+                            observer.onCompleted()
+                        }
+                }
+            }
+            
+            return Disposables.create()
+        }
+    }
+    
 }
