@@ -24,10 +24,13 @@ class QRTableViewCell: UITableViewCell {
         
         gradientView.dropShadow()
         
-        let QRDictionary: [String:Any] = ["ot": "0001", "dOp": [["alias": "Probando QR (Alias)"],
-                                        ["cl": "012180027192980453"], ["type": "CL"],
-                                        ["refn": "Probando QR"],
-                                        ["refa": "MAURICIO"], ["amount": "10.00"],
+        let account = Defaults.getBusiness?.clabe ?? ""
+        let businessName = Defaults.getBusiness?.business ?? ""
+        
+        let QRDictionary: [String:Any] = ["ot": "0001", "dOp": [["alias": "Pago \(businessName)"],
+                                        ["cl": account], ["type": "CL"],
+                                        ["refn": "Pago \(businessName)"],
+                                        ["refa": "Pago \(businessName)"], ["amount": "10.00"],
                                         ["bank": "00012"], ["country": "MX"], ["currency": "MXN"]]]
         
         if let qrData = try? JSONSerialization.data(withJSONObject: QRDictionary) {

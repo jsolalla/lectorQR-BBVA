@@ -89,6 +89,10 @@ class HomeViewController: UIViewController {
         }).disposed(by: disposeBag)
         
         setUpNavigationBar(color: .clear)
+        
+        if let business = Defaults.getBusiness?.business {
+            lblBusinessName.text = business
+        }
     }
 
     override func viewDidLayoutSubviews() {
