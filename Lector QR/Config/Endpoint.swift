@@ -14,7 +14,7 @@ class QREndpointConfig {
     public static var current = QREndpointConfig()
     
     private var contentPath: String {
-        return "api/rest/model"
+        return "api"
     }
     
     public lazy var host: String = APIEndPointConfig.defaultConfig.url

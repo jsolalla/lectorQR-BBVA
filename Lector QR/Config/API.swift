@@ -8,6 +8,16 @@
 
 import Foundation
 
+enum State {
+    case initialized
+    case none
+}
+
+enum APIResult<T> {
+    case success(T)
+    case error(Error)
+}
+
 public enum APIEndPointConfig: String, Equatable {
     
     case production = "PRODUCTION"
@@ -16,10 +26,10 @@ public enum APIEndPointConfig: String, Equatable {
     public var url: String {
         
         if self == .production {
-            return "https://super.walmart.com.mx"
+            return "http://138.68.16.213:8080"
         }
         
-        return "https://super-qa.walmart.com.mx"
+        return "http://138.68.16.213:8080"
     }
     
     public static let defaultConfig = APIEndPointConfig.development

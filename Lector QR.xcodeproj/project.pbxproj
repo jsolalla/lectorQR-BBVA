@@ -24,7 +24,10 @@
 		EA5CC98D2144ABA100C984BA /* QRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5CC98C2144ABA100C984BA /* QRService.swift */; };
 		EA5CC98F2144C5E000C984BA /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5CC98E2144C5E000C984BA /* ProductsViewController.swift */; };
 		EA5CC9912144C66B00C984BA /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5CC9902144C66B00C984BA /* ProductTableViewCell.swift */; };
-		EA787A6F21438827007DB83E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA787A6E21438827007DB83E /* LoginViewModel.swift */; };
+		EA5CC9932144D1C100C984BA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5CC9922144D1C100C984BA /* User.swift */; };
+		EA5CC9952144D61500C984BA /* UserViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5CC9942144D61500C984BA /* UserViewModel.swift */; };
+		EA5CC9972144D64100C984BA /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5CC9962144D64100C984BA /* UserRepository.swift */; };
+		EA5CC99A2144D8F100C984BA /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5CC9992144D8F100C984BA /* BaseRepository.swift */; };
 		EA787A7121438830007DB83E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA787A7021438830007DB83E /* HomeViewModel.swift */; };
 		EA787A7321438839007DB83E /* CreateAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA787A7221438839007DB83E /* CreateAccountViewModel.swift */; };
 		EA787A7521438859007DB83E /* ProductsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA787A7421438859007DB83E /* ProductsViewModel.swift */; };
@@ -71,7 +74,10 @@
 		EA5CC98C2144ABA100C984BA /* QRService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRService.swift; sourceTree = "<group>"; };
 		EA5CC98E2144C5E000C984BA /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
 		EA5CC9902144C66B00C984BA /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
-		EA787A6E21438827007DB83E /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		EA5CC9922144D1C100C984BA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		EA5CC9942144D61500C984BA /* UserViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewModel.swift; sourceTree = "<group>"; };
+		EA5CC9962144D64100C984BA /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
+		EA5CC9992144D8F100C984BA /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
 		EA787A7021438830007DB83E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		EA787A7221438839007DB83E /* CreateAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewModel.swift; sourceTree = "<group>"; };
 		EA787A7421438859007DB83E /* ProductsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewModel.swift; sourceTree = "<group>"; };
@@ -163,10 +169,20 @@
 			path = QR;
 			sourceTree = "<group>";
 		};
+		EA5CC9982144D64E00C984BA /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				EA5CC9882144AB2500C984BA /* QRParams.swift */,
+				EA5CC98A2144AB6800C984BA /* QREndpoint.swift */,
+				EA5CC98C2144ABA100C984BA /* QRService.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 		EA787A6A21437580007DB83E /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
-				EA787A6E21438827007DB83E /* LoginViewModel.swift */,
+				EA5CC9942144D61500C984BA /* UserViewModel.swift */,
 				EA787A7021438830007DB83E /* HomeViewModel.swift */,
 				EA787A7221438839007DB83E /* CreateAccountViewModel.swift */,
 				EA787A7421438859007DB83E /* ProductsViewModel.swift */,
@@ -178,9 +194,9 @@
 		EA787A6B21437592007DB83E /* Repository */ = {
 			isa = PBXGroup;
 			children = (
-				EA5CC9882144AB2500C984BA /* QRParams.swift */,
-				EA5CC98A2144AB6800C984BA /* QREndpoint.swift */,
-				EA5CC98C2144ABA100C984BA /* QRService.swift */,
+				EA5CC9982144D64E00C984BA /* Config */,
+				EA5CC9962144D64100C984BA /* UserRepository.swift */,
+				EA5CC9992144D8F100C984BA /* BaseRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -208,6 +224,7 @@
 		EA787A6D214375C0007DB83E /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				EA5CC9922144D1C100C984BA /* User.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -395,16 +412,19 @@
 				EA787AA421447333007DB83E /* RecordsViewController.swift in Sources */,
 				EA5CC97A2144975200C984BA /* QRAccountTableViewCell.swift in Sources */,
 				EA5CC98521449A8100C984BA /* QRViewController.swift in Sources */,
-				EA787A6F21438827007DB83E /* LoginViewModel.swift in Sources */,
 				EA787A982144106B007DB83E /* GradientView.swift in Sources */,
 				EA787A8F2143B581007DB83E /* SignUpViewController.swift in Sources */,
 				EA5CC98D2144ABA100C984BA /* QRService.swift in Sources */,
+				EA5CC99A2144D8F100C984BA /* BaseRepository.swift in Sources */,
 				EA5CC9892144AB2500C984BA /* QRParams.swift in Sources */,
 				EA787A912143C395007DB83E /* SignUpCardViewController.swift in Sources */,
 				EA787A9A2144387C007DB83E /* AccountViewController.swift in Sources */,
 				EA787A7A214388FD007DB83E /* Color.swift in Sources */,
 				EA787A9E21445CF7007DB83E /* AccountDetailTableCell.swift in Sources */,
+				EA5CC9932144D1C100C984BA /* User.swift in Sources */,
+				EA5CC9952144D61500C984BA /* UserViewModel.swift in Sources */,
 				EA787A772143888E007DB83E /* PaymentViewModel.swift in Sources */,
+				EA5CC9972144D64100C984BA /* UserRepository.swift in Sources */,
 				EA787A7121438830007DB83E /* HomeViewModel.swift in Sources */,
 				EA787A932143C749007DB83E /* SignUpBusinessViewController.swift in Sources */,
 				EA787AA621447F56007DB83E /* PaymentAmountTableCell.swift in Sources */,

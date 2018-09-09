@@ -15,6 +15,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+        if Defaults.getBusiness != nil {
+            let storyboard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
+            let root = storyboard.instantiateViewController(withIdentifier: "Login") as! UINavigationController
+            window = UIWindow(frame:  UIScreen.main.bounds)
+            window?.rootViewController = root
+            window?.makeKeyAndVisible()
+        }
+        
         return true
     }
 

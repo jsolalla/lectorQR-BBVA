@@ -13,6 +13,8 @@ class SignUpViewController: UIViewController {
     @IBOutlet weak var txtMobileNumber: UITextField!
     @IBOutlet weak var btnLogin: UIButton!
     
+    var user: User = User()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
@@ -21,6 +23,19 @@ class SignUpViewController: UIViewController {
         btnLogin.backgroundColor = UIColor.QR.mediumBlue
         
         setUpNavigationBar()
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        
+        if let signUpCard = segue.destination as? SignUpCardViewController {
+            user.mobileNumber = txtMobileNumber.text?.digits ?? ""
+            signUpCard.user = user
+        }
+        
+    }
+    
+    override func canPerformAction(_ action: Selector, withSender sender: Any?) -> Bool {
+        return  false
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
@@ -37,7 +52,7 @@ class SignUpViewController: UIViewController {
     }
     
     @IBAction func openPrivacyPolicy(_ sender: UIButton) {
-    
+        
     }
     
 }

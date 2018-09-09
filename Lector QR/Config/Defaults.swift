@@ -10,21 +10,37 @@ import Foundation
 
 struct Defaults {
     
-    static let emailKey = "email"
+    static let (numberKey, businessKey, clabeKey, idKey) = ("number", "business", "id", "clabe")
     static let userSessionKey = "com.qr.usersession"
     
-    static func saveUser(_ email: String) {
-        UserDefaults.standard.set([emailKey: email], forKey: userSessionKey)
+    struct BusinessLogged {
+        
+        var number: String?
+        var business: String?
+        var id: String?
+        var clabe: String?
+        
+        init(_ json: [String: String]) {
+            self.number = json[numberKey]
+            self.business = json[businessKey]
+            self.id = json[idKey]
+            self.clabe = json[clabeKey]
+        }
+        
     }
     
-    static func getUser() -> String? {
+    static func saveUser(_ user: User) {
+        UserDefaults.standard.set([numberKey: user.mobileNumber, businessKey: user.businessName, clabeKey: user.clabe, idKey: user.id], forKey: userSessionKey)
+    }
+    
+    static var getBusiness = { _ -> BusinessLogged? in
         
-        guard let userData = UserDefaults.standard.value(forKey: userSessionKey) as? [String: String], let email = userData[emailKey] else {
+        guard let session = (UserDefaults.standard.value(forKey: userSessionKey) as? [String: String]) else {
             return nil
         }
         
-        return email
-    }
+        return BusinessLogged(session)
+    }(())
     
     static func clearUserData() {
         UserDefaults.standard.removeObject(forKey: userSessionKey)

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="Xtk-ej-XI1">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="aau-q9-VTr">
     <device id="retina5_5" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -71,7 +71,7 @@ ingresar el número de celular que diste de alta para tus alertas.</string>
                                     <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 </state>
                                 <connections>
-                                    <segue destination="afv-Tq-fKr" kind="show" id="7HE-fZ-Lw0"/>
+                                    <segue destination="afv-Tq-fKr" kind="show" identifier="signUpClabe" id="7HE-fZ-Lw0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VLe-cB-X6n">
@@ -152,13 +152,13 @@ ingresar el número de celular que diste de alta para tus alertas.</string>
                                     <constraint firstItem="BK7-Ow-s3k" firstAttribute="centerY" secondItem="dcc-wO-PLu" secondAttribute="centerY" id="jux-2I-DiX"/>
                                 </constraints>
                             </view>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingresa los 16 dígitos de tu tarjeta " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPY-e1-2b8">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ingresa los 18 dígitos de tu clabe " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xPY-e1-2b8">
                                 <rect key="frame" x="16" y="283" width="382" height="19.333333333333314"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="16"/>
                                 <color key="textColor" red="0.18823529411764706" green="0.18823529411764706" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Número de tarjeta" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NW1-Ap-6ch">
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Número de clabe" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NW1-Ap-6ch">
                                 <rect key="frame" x="16" y="320" width="382" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="uvj-5e-t3a"/>
@@ -179,7 +179,7 @@ ingresar el número de celular que diste de alta para tus alertas.</string>
                                 </state>
                                 <connections>
                                     <action selector="nextStep:" destination="afv-Tq-fKr" eventType="touchUpInside" id="Con-iv-xrq"/>
-                                    <segue destination="Gr8-Wg-AnD" kind="show" id="YGI-ej-QDE"/>
+                                    <segue destination="Gr8-Wg-AnD" kind="show" identifier="signUpBusiness" id="YGI-ej-QDE"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -301,12 +301,29 @@ ingresar el número de celular que diste de alta para tus alertas.</string>
                                     <constraint firstAttribute="trailing" secondItem="cVn-P6-nAH" secondAttribute="trailing" constant="16" id="v2V-3n-wUq"/>
                                 </constraints>
                             </scrollView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="EKc-hy-WPC">
+                                <rect key="frame" x="16" y="626" width="382" height="46"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="9IB-Mz-Tle"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <state key="normal" title="INGRESAR">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="login:" destination="xY4-A6-kgK" eventType="touchUpInside" id="k4a-WS-RhB"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="8Ib-Q0-D4z" firstAttribute="trailing" secondItem="ej9-LV-dD7" secondAttribute="trailing" id="0N6-yo-hlQ"/>
+                            <constraint firstItem="EKc-hy-WPC" firstAttribute="leading" secondItem="ej9-LV-dD7" secondAttribute="leading" constant="16" id="B4N-qU-94t"/>
                             <constraint firstItem="8Ib-Q0-D4z" firstAttribute="bottom" secondItem="ej9-LV-dD7" secondAttribute="bottom" id="Mjf-gP-bPH"/>
+                            <constraint firstItem="ej9-LV-dD7" firstAttribute="trailing" secondItem="EKc-hy-WPC" secondAttribute="trailing" constant="16" id="NJn-dO-TYN"/>
                             <constraint firstItem="8Ib-Q0-D4z" firstAttribute="leading" secondItem="ej9-LV-dD7" secondAttribute="leading" id="a5b-cu-711"/>
+                            <constraint firstItem="ej9-LV-dD7" firstAttribute="bottom" secondItem="EKc-hy-WPC" secondAttribute="bottom" id="ol6-TY-nCf"/>
                             <constraint firstItem="8Ib-Q0-D4z" firstAttribute="top" secondItem="ej9-LV-dD7" secondAttribute="top" id="qjW-B1-Eg4"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ej9-LV-dD7"/>
@@ -314,6 +331,7 @@ ingresar el número de celular que diste de alta para tus alertas.</string>
                     <navigationItem key="navigationItem" id="s8V-y3-zIY"/>
                     <simulatedNavigationBarMetrics key="simulatedTopBarMetrics" translucent="NO" prompted="NO"/>
                     <connections>
+                        <outlet property="btnLogin" destination="EKc-hy-WPC" id="vyd-D4-If5"/>
                         <outlet property="lblUser" destination="GqC-u6-86w" id="IED-rO-vGs"/>
                         <outlet property="scrollView" destination="8Ib-Q0-D4z" id="8W2-8z-k3T"/>
                         <outlet property="txtPassword" destination="75v-Ah-zNz" id="fhv-xS-U4N"/>
@@ -326,7 +344,7 @@ ingresar el número de celular que diste de alta para tus alertas.</string>
         <!--Navigation Controller-->
         <scene sceneID="mUV-ht-MdZ">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="aau-q9-VTr" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="NewAccount" automaticallyAdjustsScrollViewInsets="NO" id="aau-q9-VTr" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" translucent="NO" id="59d-eg-mBp">
                         <rect key="frame" x="0.0" y="20" width="414" height="44"/>
@@ -450,7 +468,7 @@ ingresar el número de celular que diste de alta para tus alertas.</string>
         <!--Navigation Controller-->
         <scene sceneID="AQa-PT-Ipz">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="Dct-FW-lwT" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Login" automaticallyAdjustsScrollViewInsets="NO" id="Dct-FW-lwT" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="nNS-Z7-2RX">
                         <rect key="frame" x="0.0" y="20" width="414" height="44"/>
@@ -1069,7 +1087,7 @@ ingresar el número de celular que diste de alta para tus alertas.</string>
         <!--Navigation Controller-->
         <scene sceneID="tgC-pi-nuc">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Xtk-ej-XI1" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="Home" automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="Xtk-ej-XI1" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="SIb-jX-OED">
                         <autoresizingMask key="autoresizingMask"/>

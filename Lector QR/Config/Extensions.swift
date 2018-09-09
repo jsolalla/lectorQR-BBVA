@@ -16,6 +16,15 @@ func delay(seconds: Double, completion: @escaping ()->()) {
     }
 }
 
+extension String {
+    
+    var digits: String {
+        return components(separatedBy: CharacterSet.decimalDigits.inverted)
+            .joined()
+    }
+    
+}
+
 extension UIColor {
     
     convenience init(red: Int, green: Int, blue: Int) {

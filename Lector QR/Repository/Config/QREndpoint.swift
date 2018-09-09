@@ -14,7 +14,7 @@ fileprivate let POST_ENCODING: ParameterEncoding = JSONEncoding.prettyPrinted
 fileprivate let POST_FORM: ParameterEncoding = URLEncoding.httpBody
 
 enum QREndpoint {
-    
+    case signUp(user: User)
 }
 
 extension QREndpoint: TargetType {
@@ -24,11 +24,17 @@ extension QREndpoint: TargetType {
     }
     
     var path: String {
-        return ""
+        switch self {
+        case .signUp:
+            return "/user"
+        }
     }
     
     var method: Moya.Method {
-        return .post
+        switch self {
+        case .signUp:
+            return .post
+        }
     }
     
     var sampleData: Data {
@@ -36,7 +42,18 @@ extension QREndpoint: TargetType {
     }
     
     var task: Task {
-        return .requestPlain
+        
+        switch self {
+        case .signUp(let user):
+            return .requestParameters(parameters:
+                [QRParams.businessName: user.businessName,
+                 QRParams.name: user.businessName,
+                 QRParams.phone: user.mobileNumber,
+                 QRParams.password: user.password,
+                 QRParams.accounts: [[QRParams.clabe: user.clabe]]
+                ], encoding: POST_ENCODING)
+        }
+        
     }
     
     var headers: [String : String]? {
