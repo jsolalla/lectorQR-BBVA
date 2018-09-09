@@ -16,6 +16,7 @@ class PaymentViewController: UIViewController {
     @IBOutlet weak var btnGenerateCode: UIButton!
     
     let disposeBag = DisposeBag.init()
+    var paymentAmountTableCell: PaymentAmountTableCell!
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .default
@@ -47,6 +48,7 @@ class PaymentViewController: UIViewController {
         let navigation = storyboard!.instantiateViewController(withIdentifier: "QRNavigation") as! UINavigationController
         
         if let qrPayment = navigation.childViewControllers.first as? QRViewController {
+            qrPayment.amount = Double((paymentAmountTableCell.txtAmount.text ?? "0.0").digits) ?? 0.0
             qrPayment.navigation = navigationController
         }
         
@@ -68,8 +70,8 @@ extension PaymentViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if indexPath.section == 0 {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "PaymentAmountTableCell") as! PaymentAmountTableCell
-            return cell
+            paymentAmountTableCell = tableView.dequeueReusableCell(withIdentifier: "PaymentAmountTableCell") as? PaymentAmountTableCell
+            return paymentAmountTableCell
         }
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "PaymentProductsTableCell")
