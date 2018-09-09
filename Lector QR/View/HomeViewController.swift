@@ -48,6 +48,10 @@ class HomeViewController: UIViewController {
         
         viewPay.rx.tapGesture().when(.recognized) .subscribe(onNext: { _ in
             self.tapView(self.viewPay)
+            delay(seconds: 0.2, completion: {
+                let paymentViewController = self.storyboard!.instantiateViewController(withIdentifier: "PaymentViewController") as! PaymentViewController
+                self.navigationController?.pushViewController(paymentViewController, animated: true)
+            })
         }).disposed(by: disposeBag)
         
         viewTransactions.rx.tapGesture().when(.recognized) .subscribe(onNext: { _ in
