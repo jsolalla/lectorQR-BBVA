@@ -21,7 +21,7 @@ class TransactionViewController: UIViewController {
         btnShare.layer.cornerRadius = 8
         btnShare.backgroundColor = UIColor.QR.blueBright
         
-        _ = stackView.subviews.map { $0.addBottomBorder(UIColor.QR.gray.cgColor, borderWidth: 2.0)}
+        _ = stackView.subviews.map { $0.addBottomBorder(UIColor.QR.gray.cgColor, borderWidth: 1.0)}
     }
     
     @IBAction func goBack(_ sender: UIButton) {

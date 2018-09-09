@@ -18,6 +18,12 @@
 		EA5CC9802144981500C984BA /* QRTotalsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5CC97F2144981500C984BA /* QRTotalsTableViewCell.swift */; };
 		EA5CC9822144982100C984BA /* QRTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5CC9812144982100C984BA /* QRTableViewCell.swift */; };
 		EA5CC98521449A8100C984BA /* QRViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5CC98421449A8100C984BA /* QRViewController.swift */; };
+		EA5CC9872144AAD200C984BA /* Endpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5CC9862144AAD200C984BA /* Endpoint.swift */; };
+		EA5CC9892144AB2500C984BA /* QRParams.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5CC9882144AB2500C984BA /* QRParams.swift */; };
+		EA5CC98B2144AB6800C984BA /* QREndpoint.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5CC98A2144AB6800C984BA /* QREndpoint.swift */; };
+		EA5CC98D2144ABA100C984BA /* QRService.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5CC98C2144ABA100C984BA /* QRService.swift */; };
+		EA5CC98F2144C5E000C984BA /* ProductsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5CC98E2144C5E000C984BA /* ProductsViewController.swift */; };
+		EA5CC9912144C66B00C984BA /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5CC9902144C66B00C984BA /* ProductTableViewCell.swift */; };
 		EA787A6F21438827007DB83E /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA787A6E21438827007DB83E /* LoginViewModel.swift */; };
 		EA787A7121438830007DB83E /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA787A7021438830007DB83E /* HomeViewModel.swift */; };
 		EA787A7321438839007DB83E /* CreateAccountViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA787A7221438839007DB83E /* CreateAccountViewModel.swift */; };
@@ -59,6 +65,12 @@
 		EA5CC97F2144981500C984BA /* QRTotalsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRTotalsTableViewCell.swift; sourceTree = "<group>"; };
 		EA5CC9812144982100C984BA /* QRTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRTableViewCell.swift; sourceTree = "<group>"; };
 		EA5CC98421449A8100C984BA /* QRViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRViewController.swift; sourceTree = "<group>"; };
+		EA5CC9862144AAD200C984BA /* Endpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Endpoint.swift; sourceTree = "<group>"; };
+		EA5CC9882144AB2500C984BA /* QRParams.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRParams.swift; sourceTree = "<group>"; };
+		EA5CC98A2144AB6800C984BA /* QREndpoint.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QREndpoint.swift; sourceTree = "<group>"; };
+		EA5CC98C2144ABA100C984BA /* QRService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QRService.swift; sourceTree = "<group>"; };
+		EA5CC98E2144C5E000C984BA /* ProductsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductsViewController.swift; sourceTree = "<group>"; };
+		EA5CC9902144C66B00C984BA /* ProductTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
 		EA787A6E21438827007DB83E /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
 		EA787A7021438830007DB83E /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		EA787A7221438839007DB83E /* CreateAccountViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreateAccountViewModel.swift; sourceTree = "<group>"; };
@@ -166,6 +178,9 @@
 		EA787A6B21437592007DB83E /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				EA5CC9882144AB2500C984BA /* QRParams.swift */,
+				EA5CC98A2144AB6800C984BA /* QREndpoint.swift */,
+				EA5CC98C2144ABA100C984BA /* QRService.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -182,6 +197,7 @@
 				EA787A992144387C007DB83E /* AccountViewController.swift */,
 				EA787A9F214463F9007DB83E /* TransactionViewController.swift */,
 				EA787AA12144712A007DB83E /* PaymentViewController.swift */,
+				EA5CC98E2144C5E000C984BA /* ProductsViewController.swift */,
 				EA787AA321447333007DB83E /* RecordsViewController.swift */,
 				EA5CC98421449A8100C984BA /* QRViewController.swift */,
 				EA10023A21435E5E0087E439 /* Main.storyboard */,
@@ -200,6 +216,7 @@
 			isa = PBXGroup;
 			children = (
 				EA787A7D2143895F007DB83E /* API.swift */,
+				EA5CC9862144AAD200C984BA /* Endpoint.swift */,
 				EA787A79214388FD007DB83E /* Color.swift */,
 				EA787A7B21438904007DB83E /* Constants.swift */,
 				EA787A7F21438BA8007DB83E /* Extensions.swift */,
@@ -216,6 +233,7 @@
 				EA787A9D21445CF7007DB83E /* AccountDetailTableCell.swift */,
 				EA787A9B21445CDC007DB83E /* TransactionTableCell.swift */,
 				EA787AA521447F56007DB83E /* PaymentAmountTableCell.swift */,
+				EA5CC9902144C66B00C984BA /* ProductTableViewCell.swift */,
 			);
 			path = Helper;
 			sourceTree = "<group>";
@@ -370,7 +388,9 @@
 				EA787A7321438839007DB83E /* CreateAccountViewModel.swift in Sources */,
 				EA10023721435E5E0087E439 /* AppDelegate.swift in Sources */,
 				EA5CC9822144982100C984BA /* QRTableViewCell.swift in Sources */,
+				EA5CC9872144AAD200C984BA /* Endpoint.swift in Sources */,
 				EA787A7E21438960007DB83E /* API.swift in Sources */,
+				EA5CC98F2144C5E000C984BA /* ProductsViewController.swift in Sources */,
 				EA5CC9802144981500C984BA /* QRTotalsTableViewCell.swift in Sources */,
 				EA787AA421447333007DB83E /* RecordsViewController.swift in Sources */,
 				EA5CC97A2144975200C984BA /* QRAccountTableViewCell.swift in Sources */,
@@ -378,6 +398,8 @@
 				EA787A6F21438827007DB83E /* LoginViewModel.swift in Sources */,
 				EA787A982144106B007DB83E /* GradientView.swift in Sources */,
 				EA787A8F2143B581007DB83E /* SignUpViewController.swift in Sources */,
+				EA5CC98D2144ABA100C984BA /* QRService.swift in Sources */,
+				EA5CC9892144AB2500C984BA /* QRParams.swift in Sources */,
 				EA787A912143C395007DB83E /* SignUpCardViewController.swift in Sources */,
 				EA787A9A2144387C007DB83E /* AccountViewController.swift in Sources */,
 				EA787A7A214388FD007DB83E /* Color.swift in Sources */,
@@ -388,6 +410,8 @@
 				EA787AA621447F56007DB83E /* PaymentAmountTableCell.swift in Sources */,
 				EA787A9521440762007DB83E /* HomeViewController.swift in Sources */,
 				EA787AA22144712A007DB83E /* PaymentViewController.swift in Sources */,
+				EA5CC9912144C66B00C984BA /* ProductTableViewCell.swift in Sources */,
+				EA5CC98B2144AB6800C984BA /* QREndpoint.swift in Sources */,
 				EA787A8221439890007DB83E /* Defaults.swift in Sources */,
 				EA787A8021438BA8007DB83E /* Extensions.swift in Sources */,
 				EA787A8421439B21007DB83E /* LoginViewController.swift in Sources */,

@@ -117,7 +117,7 @@ ingresar el número de celular que diste de alta para tus alertas.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="928.79999999999995" y="26.53673163418291"/>
+            <point key="canvasLocation" x="928" y="220"/>
         </scene>
         <!--Sign Up Card View Controller-->
         <scene sceneID="hL7-P3-R6H">
@@ -211,7 +211,7 @@ ingresar el número de celular que diste de alta para tus alertas.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GZV-qz-t1Q" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1824.6376811594205" y="25.271739130434785"/>
+            <point key="canvasLocation" x="1825" y="219"/>
         </scene>
         <!--Login View Controller-->
         <scene sceneID="zb7-dU-VQ1">
@@ -321,7 +321,7 @@ ingresar el número de celular que diste de alta para tus alertas.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="OTh-GU-zN4" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="928" y="755"/>
+            <point key="canvasLocation" x="928" y="949"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="mUV-ht-MdZ">
@@ -339,7 +339,7 @@ ingresar el número de celular que diste de alta para tus alertas.</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="s4T-eK-dCS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="106" y="27"/>
+            <point key="canvasLocation" x="106" y="221"/>
         </scene>
         <!--Sign Up Business View Controller-->
         <scene sceneID="ENs-4q-giK">
@@ -445,7 +445,7 @@ ingresar el número de celular que diste de alta para tus alertas.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="i6f-Sm-Dhg" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2706" y="27"/>
+            <point key="canvasLocation" x="2706" y="221"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="AQa-PT-Ipz">
@@ -463,25 +463,25 @@ ingresar el número de celular que diste de alta para tus alertas.</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Igr-a5-iJv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="106" y="755"/>
+            <point key="canvasLocation" x="106" y="949"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="5SB-xv-7Za">
             <objects>
                 <viewController id="Y3z-w6-tas" customClass="HomeViewController" customModule="Lector_QR" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8zi-0C-Azw">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="870"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="1050"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eOZ-58-VIo">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="44"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="120"/>
                                 <color key="backgroundColor" red="0.0" green="0.26666666666666666" blue="0.50588235294117645" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="44" id="uG4-7h-XxH"/>
+                                    <constraint firstAttribute="height" constant="120" id="uG4-7h-XxH"/>
                                 </constraints>
                             </view>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vxc-10-UtG">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="870"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="1050"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tz6-yl-ucU" customClass="GradientView" customModule="Lector_QR" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="-1000" width="414" height="1297"/>
@@ -680,8 +680,81 @@ ingresar el número de celular que diste de alta para tus alertas.</string>
                                             <constraint firstAttribute="trailing" secondItem="AeW-ix-b3F" secondAttribute="trailing" constant="12" id="vYZ-Wf-NHN"/>
                                         </constraints>
                                     </view>
+                                    <view tag="10" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="f4G-O1-U8U">
+                                        <rect key="frame" x="219.66666666666663" y="652" width="169.33333333333337" height="150"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="champion" translatesAutoresizingMaskIntoConstraints="NO" id="yL1-6f-tSg">
+                                                <rect key="frame" x="12" y="12" width="32" height="32"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="32" id="Lfk-NC-PdW"/>
+                                                    <constraint firstAttribute="height" constant="32" id="znN-fX-Jvd"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="VENDEDOR" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Oge-h1-pLf">
+                                                <rect key="frame" x="12" y="56" width="145.33333333333334" height="17"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <color key="textColor" red="0.027450980390000001" green="0.12941176469999999" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Los vendedores con más ventas durante los últimos días" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pcD-OP-MZG">
+                                                <rect key="frame" x="12" y="83" width="145.33333333333334" height="46.666666666666657"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                                <color key="textColor" red="0.18823529410000001" green="0.18823529410000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstAttribute="trailing" secondItem="pcD-OP-MZG" secondAttribute="trailing" constant="12" id="2eq-Tq-Xdy"/>
+                                            <constraint firstItem="pcD-OP-MZG" firstAttribute="leading" secondItem="f4G-O1-U8U" secondAttribute="leading" constant="12" id="7pc-iu-IFj"/>
+                                            <constraint firstItem="Oge-h1-pLf" firstAttribute="top" secondItem="yL1-6f-tSg" secondAttribute="bottom" constant="12" id="DcI-V5-9RP"/>
+                                            <constraint firstItem="pcD-OP-MZG" firstAttribute="top" secondItem="Oge-h1-pLf" secondAttribute="bottom" constant="10" id="XmC-Im-Yx4"/>
+                                            <constraint firstItem="pcD-OP-MZG" firstAttribute="top" secondItem="Oge-h1-pLf" secondAttribute="bottom" constant="10" id="beu-1T-Cka"/>
+                                            <constraint firstItem="Oge-h1-pLf" firstAttribute="leading" secondItem="f4G-O1-U8U" secondAttribute="leading" constant="12" id="r94-C8-ngA"/>
+                                            <constraint firstItem="yL1-6f-tSg" firstAttribute="leading" secondItem="f4G-O1-U8U" secondAttribute="leading" constant="12" id="vOj-Jq-DFy"/>
+                                            <constraint firstItem="yL1-6f-tSg" firstAttribute="top" secondItem="f4G-O1-U8U" secondAttribute="top" constant="12" id="xDi-r1-l9D"/>
+                                            <constraint firstAttribute="trailing" secondItem="Oge-h1-pLf" secondAttribute="trailing" constant="12" id="xuE-CK-Mex"/>
+                                            <constraint firstAttribute="height" constant="150" id="y9G-Dg-CAt"/>
+                                        </constraints>
+                                    </view>
+                                    <view tag="10" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Yox-gR-7b7">
+                                        <rect key="frame" x="25" y="652" width="169.66666666666666" height="150"/>
+                                        <subviews>
+                                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="cart" translatesAutoresizingMaskIntoConstraints="NO" id="9XO-Qx-8Nc">
+                                                <rect key="frame" x="12" y="12" width="32" height="32"/>
+                                                <constraints>
+                                                    <constraint firstAttribute="width" constant="32" id="Rkl-eX-EXd"/>
+                                                    <constraint firstAttribute="height" constant="32" id="eXD-MR-Koa"/>
+                                                </constraints>
+                                            </imageView>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="MÁS VENDIDOS" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBz-PZ-QKy">
+                                                <rect key="frame" x="12" y="56" width="145.66666666666666" height="17"/>
+                                                <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
+                                                <color key="textColor" red="0.027450980390000001" green="0.12941176469999999" blue="0.27450980390000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Encuentra los productos mejor vendidos durante los últimos días" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="OxR-JZ-Yf5">
+                                                <rect key="frame" x="12" y="83" width="145.66666666666666" height="43"/>
+                                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                                <color key="textColor" red="0.18823529410000001" green="0.18823529410000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <nil key="highlightedColor"/>
+                                            </label>
+                                        </subviews>
+                                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <constraints>
+                                            <constraint firstItem="9XO-Qx-8Nc" firstAttribute="leading" secondItem="Yox-gR-7b7" secondAttribute="leading" constant="12" id="8Pf-Ny-xhg"/>
+                                            <constraint firstAttribute="trailing" secondItem="wBz-PZ-QKy" secondAttribute="trailing" constant="12" id="BAL-BI-CSq"/>
+                                            <constraint firstItem="OxR-JZ-Yf5" firstAttribute="leading" secondItem="Yox-gR-7b7" secondAttribute="leading" constant="12" id="Fcu-CD-QbC"/>
+                                            <constraint firstAttribute="height" constant="150" id="IRy-u5-PSS"/>
+                                            <constraint firstItem="9XO-Qx-8Nc" firstAttribute="top" secondItem="Yox-gR-7b7" secondAttribute="top" constant="12" id="ImJ-gg-NG5"/>
+                                            <constraint firstAttribute="trailing" secondItem="OxR-JZ-Yf5" secondAttribute="trailing" constant="12" id="RUl-eN-eiK"/>
+                                            <constraint firstItem="OxR-JZ-Yf5" firstAttribute="top" secondItem="wBz-PZ-QKy" secondAttribute="bottom" constant="10" id="Rin-Rg-7LU"/>
+                                            <constraint firstItem="wBz-PZ-QKy" firstAttribute="leading" secondItem="Yox-gR-7b7" secondAttribute="leading" constant="12" id="ZSw-QT-Jr3"/>
+                                            <constraint firstItem="wBz-PZ-QKy" firstAttribute="top" secondItem="9XO-Qx-8Nc" secondAttribute="bottom" constant="12" id="jyz-kQ-Gpi"/>
+                                        </constraints>
+                                    </view>
                                     <view tag="10" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eue-8I-8Sg">
-                                        <rect key="frame" x="25" y="652" width="364" height="140"/>
+                                        <rect key="frame" x="25" y="827" width="364" height="140"/>
                                         <subviews>
                                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ok" translatesAutoresizingMaskIntoConstraints="NO" id="wVW-e4-mmk">
                                                 <rect key="frame" x="162" y="16" width="40" height="40"/>
@@ -727,7 +800,7 @@ ingresar el número de celular que diste de alta para tus alertas.</string>
                                         </constraints>
                                     </view>
                                     <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4wE-a6-FhM">
-                                        <rect key="frame" x="25" y="822" width="364" height="29"/>
+                                        <rect key="frame" x="25" y="997" width="364" height="29"/>
                                         <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                         <state key="normal" title="SALIR">
                                             <color key="titleColor" red="0.0" green="0.26666666666666666" blue="0.50588235294117645" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -737,24 +810,30 @@ ingresar el número de celular que diste de alta para tus alertas.</string>
                                 <constraints>
                                     <constraint firstAttribute="trailing" secondItem="4wE-a6-FhM" secondAttribute="trailing" constant="25" id="5LK-ix-BO0"/>
                                     <constraint firstItem="1gz-nF-h2F" firstAttribute="trailing" secondItem="c1v-yH-biQ" secondAttribute="trailing" id="5y5-LB-Z6J"/>
+                                    <constraint firstItem="Yox-gR-7b7" firstAttribute="leading" secondItem="vxc-10-UtG" secondAttribute="leading" constant="25" id="8ZR-0x-nbZ"/>
                                     <constraint firstAttribute="trailing" secondItem="c1v-yH-biQ" secondAttribute="trailing" constant="25" id="EZd-8W-Xrq"/>
                                     <constraint firstItem="c1v-yH-biQ" firstAttribute="top" secondItem="pJe-g1-yAa" secondAttribute="top" id="G1n-rW-9kf"/>
                                     <constraint firstItem="pJe-g1-yAa" firstAttribute="top" secondItem="tz6-yl-ucU" secondAttribute="bottom" constant="25" id="I8N-zL-Pcw"/>
                                     <constraint firstItem="eue-8I-8Sg" firstAttribute="trailing" secondItem="1gz-nF-h2F" secondAttribute="trailing" id="IMy-mN-i2T"/>
                                     <constraint firstItem="pJe-g1-yAa" firstAttribute="leading" secondItem="vxc-10-UtG" secondAttribute="leading" constant="25" id="Mb1-UN-XQh"/>
+                                    <constraint firstItem="f4G-O1-U8U" firstAttribute="top" secondItem="Yox-gR-7b7" secondAttribute="top" id="QHU-Zz-8YG"/>
+                                    <constraint firstItem="eue-8I-8Sg" firstAttribute="top" secondItem="Yox-gR-7b7" secondAttribute="bottom" constant="25" id="XfV-Oy-Zjx"/>
                                     <constraint firstItem="1gz-nF-h2F" firstAttribute="top" secondItem="pJe-g1-yAa" secondAttribute="bottom" constant="25" id="Yxj-r2-m7M"/>
                                     <constraint firstItem="eue-8I-8Sg" firstAttribute="leading" secondItem="1gz-nF-h2F" secondAttribute="leading" id="awc-PE-EhB"/>
                                     <constraint firstItem="4wE-a6-FhM" firstAttribute="top" secondItem="eue-8I-8Sg" secondAttribute="bottom" constant="30" id="cTD-Ss-CbS"/>
+                                    <constraint firstAttribute="trailing" secondItem="f4G-O1-U8U" secondAttribute="trailing" constant="25" id="ceH-gZ-mNS"/>
                                     <constraint firstItem="tz6-yl-ucU" firstAttribute="top" secondItem="vxc-10-UtG" secondAttribute="top" constant="-1000" id="dYW-sy-UqA"/>
                                     <constraint firstItem="4wE-a6-FhM" firstAttribute="leading" secondItem="vxc-10-UtG" secondAttribute="leading" constant="25" id="edq-dr-moP"/>
+                                    <constraint firstItem="Yox-gR-7b7" firstAttribute="top" secondItem="1gz-nF-h2F" secondAttribute="bottom" constant="25" id="fCU-QG-Mbq"/>
                                     <constraint firstItem="tz6-yl-ucU" firstAttribute="leading" secondItem="vxc-10-UtG" secondAttribute="leading" id="fZI-s8-FFT"/>
                                     <constraint firstAttribute="trailing" secondItem="tz6-yl-ucU" secondAttribute="trailing" id="gGy-je-WPF"/>
                                     <constraint firstAttribute="bottom" secondItem="4wE-a6-FhM" secondAttribute="bottom" constant="20" id="itW-hP-Nmp"/>
                                     <constraint firstItem="tz6-yl-ucU" firstAttribute="centerX" secondItem="vxc-10-UtG" secondAttribute="centerX" id="jgA-Ni-Mrh"/>
                                     <constraint firstItem="pJe-g1-yAa" firstAttribute="width" secondItem="c1v-yH-biQ" secondAttribute="width" id="lx6-PL-FAS"/>
                                     <constraint firstItem="c1v-yH-biQ" firstAttribute="leading" secondItem="pJe-g1-yAa" secondAttribute="trailing" constant="25" id="nfv-ea-VGT"/>
-                                    <constraint firstItem="eue-8I-8Sg" firstAttribute="top" secondItem="1gz-nF-h2F" secondAttribute="bottom" constant="25" id="qU3-Rx-wpN"/>
+                                    <constraint firstItem="Yox-gR-7b7" firstAttribute="width" secondItem="f4G-O1-U8U" secondAttribute="width" id="rd2-3w-MT7"/>
                                     <constraint firstItem="1gz-nF-h2F" firstAttribute="leading" secondItem="pJe-g1-yAa" secondAttribute="leading" id="uQh-oP-S47"/>
+                                    <constraint firstItem="f4G-O1-U8U" firstAttribute="leading" secondItem="Yox-gR-7b7" secondAttribute="trailing" constant="25" id="w5R-lO-iuM"/>
                                 </constraints>
                             </scrollView>
                         </subviews>
@@ -773,7 +852,7 @@ ingresar el número de celular que diste de alta para tus alertas.</string>
                     </view>
                     <navigationItem key="navigationItem" id="aVj-sn-eMg"/>
                     <nil key="simulatedTopBarMetrics"/>
-                    <size key="freeformSize" width="414" height="870"/>
+                    <size key="freeformSize" width="414" height="1050"/>
                     <connections>
                         <outlet property="lblBusinessName" destination="VS8-y9-nyu" id="41J-yc-ca2"/>
                         <outlet property="lblGreeting" destination="LMr-mz-tvN" id="wfV-5L-xlc"/>
@@ -783,12 +862,14 @@ ingresar el número de celular que diste de alta para tus alertas.</string>
                         <outlet property="viewHeaderHome" destination="tz6-yl-ucU" id="jt4-7V-YA1"/>
                         <outlet property="viewInventory" destination="1gz-nF-h2F" id="Jdb-tC-uL1"/>
                         <outlet property="viewPay" destination="pJe-g1-yAa" id="k4h-uD-SsQ"/>
+                        <outlet property="viewTopSellers" destination="f4G-O1-U8U" id="EB8-Ff-ptt"/>
+                        <outlet property="viewTopSelling" destination="Yox-gR-7b7" id="zxv-dB-KMo"/>
                         <outlet property="viewTransactions" destination="c1v-yH-biQ" id="AgO-Ua-kbD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AmS-pg-65A" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3614" y="1047"/>
+            <point key="canvasLocation" x="3661" y="1047"/>
         </scene>
         <!--Account View Controller-->
         <scene sceneID="3ho-E6-RET">
@@ -983,7 +1064,7 @@ ingresar el número de celular que diste de alta para tus alertas.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qQP-9v-IRI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4541" y="196"/>
+            <point key="canvasLocation" x="4639" y="1047"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="tgC-pi-nuc">
@@ -1011,7 +1092,7 @@ ingresar el número de celular que diste de alta para tus alertas.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bvs-AF-fxH">
-                                <rect key="frame" x="16" y="22" width="30" height="30"/>
+                                <rect key="frame" x="16" y="28" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="30" id="5Xk-Hm-R8K"/>
                                     <constraint firstAttribute="width" constant="30" id="vYg-vV-dBw"/>
@@ -1021,14 +1102,14 @@ ingresar el número de celular que diste de alta para tus alertas.</string>
                                     <action selector="goBack:" destination="D3s-6t-K2P" eventType="touchUpInside" id="SDb-JY-mE6"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuenta MX * 82433" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3O-Fz-FrP">
-                                <rect key="frame" x="54" y="22.666666666666664" width="340" height="28.666666666666664"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cuenta MX * 82433" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="c3O-Fz-FrP">
+                                <rect key="frame" x="54" y="28.666666666666664" width="306" height="28.666666666666664"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vmF-Ck-jJZ">
-                                <rect key="frame" x="0.0" y="71.333333333333314" width="414" height="664.66666666666674"/>
+                                <rect key="frame" x="0.0" y="77.333333333333314" width="414" height="658.66666666666674"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="djj-wv-Yea">
                                         <rect key="frame" x="0.0" y="0.0" width="414" height="513"/>
@@ -1037,8 +1118,8 @@ ingresar el número de celular que diste de alta para tus alertas.</string>
                                                 <rect key="frame" x="0.0" y="0.0" width="414" height="64"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cta. Depósito" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3Fw-wi-cjA">
-                                                        <rect key="frame" x="15.999999999999993" y="22" width="104.33333333333331" height="20.333333333333329"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <rect key="frame" x="16" y="22" width="109" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                         <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -1061,8 +1142,8 @@ ingresar el número de celular que diste de alta para tus alertas.</string>
                                                 <rect key="frame" x="0.0" y="64.000000000000028" width="414" height="64.333333333333343"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Beneficiario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AQa-nT-gDo">
-                                                        <rect key="frame" x="16" y="22" width="90" height="20.333333333333329"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <rect key="frame" x="16" y="22" width="95" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                         <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -1085,8 +1166,8 @@ ingresar el número de celular que diste de alta para tus alertas.</string>
                                                 <rect key="frame" x="0.0" y="128.33333333333331" width="414" height="64"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Importe" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MZD-Si-QV9">
-                                                        <rect key="frame" x="16" y="21.666666666666686" width="60" height="20.333333333333329"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <rect key="frame" x="16.000000000000004" y="21.666666666666686" width="63.333333333333343" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                         <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -1108,9 +1189,9 @@ ingresar el número de celular que diste de alta para tus alertas.</string>
                                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GiS-6B-les">
                                                 <rect key="frame" x="0.0" y="192.33333333333337" width="414" height="64.333333333333314"/>
                                                 <subviews>
-                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Motivodel pago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2la-3g-4yj">
-                                                        <rect key="frame" x="15.999999999999993" y="22" width="118.33333333333331" height="20.333333333333329"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Motivo del pago" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2la-3g-4yj">
+                                                        <rect key="frame" x="15.999999999999993" y="22" width="127.33333333333331" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                         <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -1133,8 +1214,8 @@ ingresar el número de celular que diste de alta para tus alertas.</string>
                                                 <rect key="frame" x="0.0" y="256.66666666666669" width="414" height="64"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="flq-4M-G5i">
-                                                        <rect key="frame" x="15.999999999999996" y="21.666666666666686" width="46.666666666666657" height="20.333333333333329"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <rect key="frame" x="16.000000000000004" y="21.666666666666686" width="48.333333333333343" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                         <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -1157,8 +1238,8 @@ ingresar el número de celular que diste de alta para tus alertas.</string>
                                                 <rect key="frame" x="0.0" y="320.66666666666669" width="414" height="64"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hora" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fog-HO-NIy">
-                                                        <rect key="frame" x="16" y="22" width="37" height="20.333333333333329"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <rect key="frame" x="15.999999999999996" y="22" width="38.666666666666657" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                         <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -1181,8 +1262,8 @@ ingresar el número de celular que diste de alta para tus alertas.</string>
                                                 <rect key="frame" x="0.0" y="384.66666666666669" width="414" height="64.333333333333314"/>
                                                 <subviews>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Folio" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bmR-9f-0nM">
-                                                        <rect key="frame" x="16.000000000000004" y="22" width="36.333333333333343" height="20.333333333333329"/>
-                                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                        <rect key="frame" x="16.000000000000004" y="22" width="38.333333333333343" height="20.333333333333329"/>
+                                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
                                                         <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         <nil key="highlightedColor"/>
                                                     </label>
@@ -1254,13 +1335,13 @@ ingresar el número de celular que diste de alta para tus alertas.</string>
                             <constraint firstItem="vmF-Ck-jJZ" firstAttribute="trailing" secondItem="ETj-qo-o58" secondAttribute="trailing" id="FgE-64-LeY"/>
                             <constraint firstItem="vmF-Ck-jJZ" firstAttribute="width" secondItem="OHQ-AG-OA5" secondAttribute="width" id="HHq-xP-dsK"/>
                             <constraint firstItem="aAQ-Ad-lkh" firstAttribute="leading" secondItem="ETj-qo-o58" secondAttribute="leading" constant="16" id="N6O-lT-UvW"/>
-                            <constraint firstItem="ETj-qo-o58" firstAttribute="trailing" secondItem="c3O-Fz-FrP" secondAttribute="trailing" constant="20" id="ZaB-qc-mbC"/>
+                            <constraint firstItem="ETj-qo-o58" firstAttribute="trailing" secondItem="c3O-Fz-FrP" secondAttribute="trailing" constant="54" id="ZaB-qc-mbC"/>
                             <constraint firstItem="ETj-qo-o58" firstAttribute="bottom" secondItem="aAQ-Ad-lkh" secondAttribute="bottom" id="hfJ-GB-GWN"/>
                             <constraint firstItem="vmF-Ck-jJZ" firstAttribute="top" secondItem="c3O-Fz-FrP" secondAttribute="bottom" constant="20" id="kah-uO-0mE"/>
                             <constraint firstItem="vmF-Ck-jJZ" firstAttribute="leading" secondItem="ETj-qo-o58" secondAttribute="leading" id="keH-sT-U9s"/>
                             <constraint firstItem="Bvs-AF-fxH" firstAttribute="leading" secondItem="ETj-qo-o58" secondAttribute="leading" constant="16" id="mcX-1Z-k8t"/>
                             <constraint firstItem="ETj-qo-o58" firstAttribute="trailing" secondItem="aAQ-Ad-lkh" secondAttribute="trailing" constant="16" id="nLv-zG-vZo"/>
-                            <constraint firstItem="Bvs-AF-fxH" firstAttribute="top" secondItem="ETj-qo-o58" secondAttribute="top" constant="2" id="tQ0-GF-ohC"/>
+                            <constraint firstItem="Bvs-AF-fxH" firstAttribute="top" secondItem="ETj-qo-o58" secondAttribute="top" constant="8" id="tQ0-GF-ohC"/>
                             <constraint firstItem="c3O-Fz-FrP" firstAttribute="leading" secondItem="Bvs-AF-fxH" secondAttribute="trailing" constant="8" id="wW7-E8-CrB"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="ETj-qo-o58"/>
@@ -1273,7 +1354,7 @@ ingresar el número de celular que diste de alta para tus alertas.</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="07l-T6-SBA" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5416" y="196"/>
+            <point key="canvasLocation" x="5514" y="1047"/>
         </scene>
         <!--Payment View Controller-->
         <scene sceneID="2O5-1D-BW4">
@@ -1284,7 +1365,7 @@ ingresar el número de celular que diste de alta para tus alertas.</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="HpP-Ne-rjN">
-                                <rect key="frame" x="16" y="22" width="30" height="30"/>
+                                <rect key="frame" x="16" y="28" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="PBD-Bf-1e3"/>
                                     <constraint firstAttribute="height" constant="30" id="TiP-r1-wh8"/>
@@ -1294,8 +1375,14 @@ ingresar el número de celular que diste de alta para tus alertas.</string>
                                     <action selector="goBack:" destination="hdr-wo-bxh" eventType="touchUpInside" id="MWd-xq-rh2"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QR rápido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GL7-VD-BEk">
+                                <rect key="frame" x="54" y="28.666666666666664" width="340" height="28.666666666666664"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="pWP-bM-D5s">
-                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <rect key="frame" x="0.0" y="77.333333333333314" width="414" height="658.66666666666674"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PaymentAmountTableCell" rowHeight="135" id="mi5-pQ-PYk" customClass="PaymentAmountTableCell" customModule="Lector_QR" customModuleProvider="target">
@@ -1306,7 +1393,7 @@ ingresar el número de celular que diste de alta para tus alertas.</string>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="CANTIDAD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cLb-3f-GGg">
-                                                    <rect key="frame" x="20" y="11" width="70" height="16"/>
+                                                    <rect key="frame" x="20" y="19" width="70" height="16"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="16" id="KNQ-jD-sBg"/>
                                                     </constraints>
@@ -1315,7 +1402,7 @@ ingresar el número de celular que diste de alta para tus alertas.</string>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="$0.0" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="khk-dh-jx0">
-                                                    <rect key="frame" x="20" y="31" width="374" height="35"/>
+                                                    <rect key="frame" x="20" y="39" width="374" height="35"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="35" id="UW7-es-u1R"/>
                                                     </constraints>
@@ -1324,7 +1411,7 @@ ingresar el número de celular que diste de alta para tus alertas.</string>
                                                     <textInputTraits key="textInputTraits" keyboardType="decimalPad" returnKeyType="done"/>
                                                 </textField>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zl2-pv-mPs">
-                                                    <rect key="frame" x="20" y="78" width="374" height="46"/>
+                                                    <rect key="frame" x="20" y="86" width="374" height="38"/>
                                                     <string key="text">Generar un código QR para una cobro rapido 
 sin necesidad de realizar una lista desde el inventario</string>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
@@ -1334,7 +1421,7 @@ sin necesidad de realizar una lista desde el inventario</string>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="Zl2-pv-mPs" firstAttribute="leading" secondItem="j3u-8H-eIf" secondAttribute="leadingMargin" id="0vs-9P-RTV"/>
-                                                <constraint firstItem="cLb-3f-GGg" firstAttribute="top" secondItem="j3u-8H-eIf" secondAttribute="topMargin" id="2Er-wd-wUa"/>
+                                                <constraint firstItem="cLb-3f-GGg" firstAttribute="top" secondItem="j3u-8H-eIf" secondAttribute="topMargin" constant="8" id="2Er-wd-wUa"/>
                                                 <constraint firstItem="khk-dh-jx0" firstAttribute="top" secondItem="cLb-3f-GGg" secondAttribute="bottom" constant="4" id="6Ok-rZ-22y"/>
                                                 <constraint firstItem="khk-dh-jx0" firstAttribute="leading" secondItem="j3u-8H-eIf" secondAttribute="leadingMargin" id="KDW-k2-oQU"/>
                                                 <constraint firstItem="khk-dh-jx0" firstAttribute="trailing" secondItem="j3u-8H-eIf" secondAttribute="trailingMargin" id="P7j-jp-hnL"/>
@@ -1348,27 +1435,27 @@ sin necesidad de realizar una lista desde el inventario</string>
                                             <outlet property="txtAmount" destination="khk-dh-jx0" id="OrW-lm-Wdy"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PaymentProductsTableCell" rowHeight="64" id="0UK-IX-Q1Q">
-                                        <rect key="frame" x="0.0" y="163" width="414" height="64"/>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="PaymentProductsTableCell" rowHeight="75" id="0UK-IX-Q1Q">
+                                        <rect key="frame" x="0.0" y="163" width="414" height="75"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0UK-IX-Q1Q" id="apm-gZ-eKT">
-                                            <rect key="frame" x="0.0" y="0.0" width="414" height="63.666666666666664"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="74.666666666666671"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QR con productos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UM6-zG-6TU">
-                                                    <rect key="frame" x="20" y="11" width="139" height="21"/>
+                                                    <rect key="frame" x="20" y="19" width="139" height="21"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                                     <color key="textColor" red="0.18823529411764706" green="0.18823529411764706" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Genera el QR con los productos de tu inventario" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UW3-4a-LGn">
-                                                    <rect key="frame" x="20" y="40" width="271" height="15"/>
+                                                    <rect key="frame" x="20" y="48" width="271" height="15"/>
                                                     <fontDescription key="fontDescription" type="system" pointSize="12"/>
                                                     <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
                                                 <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="list" translatesAutoresizingMaskIntoConstraints="NO" id="YSF-fj-aKf">
-                                                    <rect key="frame" x="370" y="11" width="24" height="42"/>
+                                                    <rect key="frame" x="370" y="16.333333333333329" width="24" height="42"/>
                                                     <constraints>
                                                         <constraint firstAttribute="width" constant="24" id="HXN-TP-A2o"/>
                                                         <constraint firstAttribute="height" constant="42" id="XMu-J1-QBc"/>
@@ -1377,7 +1464,7 @@ sin necesidad de realizar una lista desde el inventario</string>
                                             </subviews>
                                             <constraints>
                                                 <constraint firstItem="YSF-fj-aKf" firstAttribute="trailing" secondItem="apm-gZ-eKT" secondAttribute="trailingMargin" id="10X-HH-y8w"/>
-                                                <constraint firstItem="UM6-zG-6TU" firstAttribute="top" secondItem="apm-gZ-eKT" secondAttribute="topMargin" id="9AY-SO-4bJ"/>
+                                                <constraint firstItem="UM6-zG-6TU" firstAttribute="top" secondItem="apm-gZ-eKT" secondAttribute="topMargin" constant="8" id="9AY-SO-4bJ"/>
                                                 <constraint firstItem="UW3-4a-LGn" firstAttribute="top" secondItem="UM6-zG-6TU" secondAttribute="bottom" constant="8" id="Dd8-1B-evL"/>
                                                 <constraint firstItem="UM6-zG-6TU" firstAttribute="leading" secondItem="apm-gZ-eKT" secondAttribute="leadingMargin" id="aXt-L2-iY8"/>
                                                 <constraint firstItem="UW3-4a-LGn" firstAttribute="leading" secondItem="apm-gZ-eKT" secondAttribute="leadingMargin" id="jKD-W5-3ji"/>
@@ -1387,12 +1474,6 @@ sin necesidad de realizar una lista desde el inventario</string>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QR rápido" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="GL7-VD-BEk">
-                                <rect key="frame" x="54" y="22.666666666666664" width="340" height="28.666666666666664"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="boG-fO-2Go">
                                 <rect key="frame" x="16" y="690" width="382" height="46"/>
                                 <color key="backgroundColor" red="0.078431372549019607" green="0.39215686274509803" blue="0.6470588235294118" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -1412,12 +1493,12 @@ sin necesidad de realizar una lista desde el inventario</string>
                         <constraints>
                             <constraint firstItem="u0O-5d-XXe" firstAttribute="trailing" secondItem="GL7-VD-BEk" secondAttribute="trailing" constant="20" id="2ll-hr-gaG"/>
                             <constraint firstItem="u0O-5d-XXe" firstAttribute="trailing" secondItem="boG-fO-2Go" secondAttribute="trailing" constant="16" id="3Uv-gp-uky"/>
-                            <constraint firstItem="HpP-Ne-rjN" firstAttribute="top" secondItem="u0O-5d-XXe" secondAttribute="top" constant="2" id="Dib-MN-QoL"/>
+                            <constraint firstItem="HpP-Ne-rjN" firstAttribute="top" secondItem="u0O-5d-XXe" secondAttribute="top" constant="8" id="Dib-MN-QoL"/>
                             <constraint firstItem="boG-fO-2Go" firstAttribute="leading" secondItem="u0O-5d-XXe" secondAttribute="leading" constant="16" id="MgU-eR-Rjw"/>
                             <constraint firstItem="u0O-5d-XXe" firstAttribute="bottom" secondItem="boG-fO-2Go" secondAttribute="bottom" id="Ngl-qy-vcs"/>
                             <constraint firstItem="GL7-VD-BEk" firstAttribute="centerY" secondItem="HpP-Ne-rjN" secondAttribute="centerY" id="Psk-Rw-LUt"/>
                             <constraint firstItem="HpP-Ne-rjN" firstAttribute="leading" secondItem="u0O-5d-XXe" secondAttribute="leading" constant="16" id="Qs2-7W-j95"/>
-                            <constraint firstItem="pWP-bM-D5s" firstAttribute="top" secondItem="u0O-5d-XXe" secondAttribute="top" constant="44" id="jKH-k3-Hms"/>
+                            <constraint firstItem="pWP-bM-D5s" firstAttribute="top" secondItem="GL7-VD-BEk" secondAttribute="bottom" constant="20" id="cxx-KG-ALb"/>
                             <constraint firstItem="pWP-bM-D5s" firstAttribute="bottom" secondItem="yWZ-Ai-Cgo" secondAttribute="bottom" id="jyw-M2-w2Y"/>
                             <constraint firstItem="GL7-VD-BEk" firstAttribute="leading" secondItem="HpP-Ne-rjN" secondAttribute="trailing" constant="8" id="wJY-f5-P81"/>
                             <constraint firstItem="pWP-bM-D5s" firstAttribute="trailing" secondItem="u0O-5d-XXe" secondAttribute="trailing" id="wRb-uT-I0X"/>
@@ -1432,7 +1513,7 @@ sin necesidad de realizar una lista desde el inventario</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="heY-lk-Joy" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4541" y="1047"/>
+            <point key="canvasLocation" x="4639" y="1952"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="h7C-dr-1Qr">
@@ -1454,8 +1535,8 @@ sin necesidad de realizar una lista desde el inventario</string>
                                             <rect key="frame" x="20" y="11" width="374" height="58"/>
                                             <string key="text">Ropa Vintage 
 S.A. de C.V.</string>
-                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
-                                            <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="calibratedRGB"/>
+                                            <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="24"/>
+                                            <color key="textColor" red="0.18823529411764706" green="0.18823529411764706" blue="0.18823529411764706" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -1696,7 +1777,7 @@ Juaréz Ciudad de México</string>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="RGW-XY-cCL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="6337.68115942029" y="1046.7391304347827"/>
+            <point key="canvasLocation" x="6436" y="1952"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="XJU-04-eHW">
@@ -1712,7 +1793,7 @@ Juaréz Ciudad de México</string>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Q9c-Yw-eZ8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5416" y="1047"/>
+            <point key="canvasLocation" x="5514" y="1952"/>
         </scene>
         <!--Records View Controller-->
         <scene sceneID="i6G-d0-hf5">
@@ -1723,7 +1804,7 @@ Juaréz Ciudad de México</string>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VS1-a0-fI1">
-                                <rect key="frame" x="16" y="22" width="30" height="30"/>
+                                <rect key="frame" x="16" y="28" width="30" height="30"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="30" id="ToL-aW-lGX"/>
                                     <constraint firstAttribute="height" constant="30" id="TwK-4t-gtX"/>
@@ -1733,8 +1814,14 @@ Juaréz Ciudad de México</string>
                                     <action selector="goBack:" destination="53h-Gz-ZqY" eventType="touchUpInside" id="dKI-6S-Rwh"/>
                                 </connections>
                             </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Historial" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IxL-Jr-lyg">
+                                <rect key="frame" x="54" y="28.666666666666664" width="340" height="28.666666666666664"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kjc-Q6-LKN">
-                                <rect key="frame" x="0.0" y="64" width="414" height="672"/>
+                                <rect key="frame" x="0.0" y="77.333333333333314" width="414" height="658.66666666666674"/>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="TransactionTableCell" rowHeight="64" id="Hok-jT-e8A" customClass="TransactionTableCell" customModule="Lector_QR" customModuleProvider="target">
@@ -1791,23 +1878,17 @@ Juaréz Ciudad de México</string>
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Historial" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IxL-Jr-lyg">
-                                <rect key="frame" x="54" y="22.666666666666664" width="340" height="28.666666666666664"/>
-                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="tO3-Fd-bk1" firstAttribute="trailing" secondItem="IxL-Jr-lyg" secondAttribute="trailing" constant="20" id="0Ld-6z-NdU"/>
                             <constraint firstItem="IxL-Jr-lyg" firstAttribute="centerY" secondItem="VS1-a0-fI1" secondAttribute="centerY" id="527-XM-JZS"/>
                             <constraint firstItem="IxL-Jr-lyg" firstAttribute="leading" secondItem="VS1-a0-fI1" secondAttribute="trailing" constant="8" id="JTq-Xg-C2q"/>
+                            <constraint firstItem="kjc-Q6-LKN" firstAttribute="top" secondItem="IxL-Jr-lyg" secondAttribute="bottom" constant="20" id="SWM-tp-FBc"/>
                             <constraint firstItem="VS1-a0-fI1" firstAttribute="leading" secondItem="tO3-Fd-bk1" secondAttribute="leading" constant="16" id="TYN-Mh-17N"/>
-                            <constraint firstItem="VS1-a0-fI1" firstAttribute="top" secondItem="tO3-Fd-bk1" secondAttribute="top" constant="2" id="cD9-m9-4NC"/>
+                            <constraint firstItem="VS1-a0-fI1" firstAttribute="top" secondItem="tO3-Fd-bk1" secondAttribute="top" constant="8" id="cD9-m9-4NC"/>
                             <constraint firstItem="kjc-Q6-LKN" firstAttribute="trailing" secondItem="tO3-Fd-bk1" secondAttribute="trailing" id="f65-Xk-4u5"/>
                             <constraint firstItem="kjc-Q6-LKN" firstAttribute="bottom" secondItem="4XH-kx-kyR" secondAttribute="bottom" id="fjn-Cc-gt1"/>
-                            <constraint firstItem="kjc-Q6-LKN" firstAttribute="top" secondItem="tO3-Fd-bk1" secondAttribute="top" constant="44" id="jJA-et-kUs"/>
                             <constraint firstItem="kjc-Q6-LKN" firstAttribute="leading" secondItem="tO3-Fd-bk1" secondAttribute="leading" id="oNz-8w-YBf"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="tO3-Fd-bk1"/>
@@ -1818,7 +1899,137 @@ Juaréz Ciudad de México</string>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="6Aa-ug-jm5" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4541" y="1884"/>
+            <point key="canvasLocation" x="4638" y="219"/>
+        </scene>
+        <!--Products View Controller-->
+        <scene sceneID="x9G-j8-s2E">
+            <objects>
+                <viewController storyboardIdentifier="ProductsViewController" id="r6I-L5-NCh" customClass="ProductsViewController" customModule="Lector_QR" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oVj-Ki-bdV">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jtk-UX-ubB">
+                                <rect key="frame" x="16" y="28" width="30" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="30" id="V0V-vc-vfH"/>
+                                    <constraint firstAttribute="height" constant="30" id="hIk-zL-V5H"/>
+                                </constraints>
+                                <state key="normal" image="back"/>
+                                <connections>
+                                    <action selector="goBack:" destination="r6I-L5-NCh" eventType="touchUpInside" id="Zkb-HK-vsE"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QR con productos" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="urM-P2-k2m">
+                                <rect key="frame" x="54" y="28.666666666666664" width="340" height="28.666666666666664"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="24"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="C5C-Gn-vl8">
+                                <rect key="frame" x="0.0" y="77.333333333333314" width="414" height="658.66666666666674"/>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ProductTableViewCell" rowHeight="96" id="SZu-96-2Am" customClass="ProductTableViewCell" customModule="Lector_QR" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="414" height="96"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="SZu-96-2Am" id="2h8-DS-4kg">
+                                            <rect key="frame" x="0.0" y="0.0" width="414" height="95.666666666666671"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="QR con productos" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xbt-ZZ-Qgx">
+                                                    <rect key="frame" x="100" y="19" width="256" height="36"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="36" id="aHQ-Wn-8w7"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <color key="textColor" red="0.18823529410000001" green="0.18823529410000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="$599" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RjD-Fg-KtA">
+                                                    <rect key="frame" x="100" y="63" width="33" height="15"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                                    <color key="textColor" red="0.40000000000000002" green="0.40000000000000002" blue="0.40000000000000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="seleccion" translatesAutoresizingMaskIntoConstraints="NO" id="uNl-5p-t7l">
+                                                    <rect key="frame" x="364" y="33" width="30" height="30"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="30" id="Ov5-FV-7LY"/>
+                                                        <constraint firstAttribute="height" constant="30" id="mwe-gt-sJr"/>
+                                                    </constraints>
+                                                </imageView>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="6iM-Sk-olZ">
+                                                    <rect key="frame" x="20" y="12" width="72" height="72"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="width" constant="72" id="YFF-d8-3rR"/>
+                                                        <constraint firstAttribute="height" constant="72" id="jwR-4H-FZQ"/>
+                                                    </constraints>
+                                                </imageView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="uNl-5p-t7l" firstAttribute="trailing" secondItem="2h8-DS-4kg" secondAttribute="trailingMargin" id="2Oj-hL-xf0"/>
+                                                <constraint firstItem="uNl-5p-t7l" firstAttribute="centerY" secondItem="2h8-DS-4kg" secondAttribute="centerY" id="4Qe-2H-Bzx"/>
+                                                <constraint firstItem="Xbt-ZZ-Qgx" firstAttribute="top" secondItem="2h8-DS-4kg" secondAttribute="topMargin" constant="8" id="7MT-5B-b1E"/>
+                                                <constraint firstItem="Xbt-ZZ-Qgx" firstAttribute="top" secondItem="2h8-DS-4kg" secondAttribute="topMargin" constant="8" id="E0O-8A-cM2"/>
+                                                <constraint firstItem="RjD-Fg-KtA" firstAttribute="top" secondItem="Xbt-ZZ-Qgx" secondAttribute="bottom" constant="8" id="Kq4-UT-cHd"/>
+                                                <constraint firstItem="RjD-Fg-KtA" firstAttribute="top" secondItem="Xbt-ZZ-Qgx" secondAttribute="bottom" constant="8" id="cGJ-si-N0K"/>
+                                                <constraint firstItem="6iM-Sk-olZ" firstAttribute="leading" secondItem="2h8-DS-4kg" secondAttribute="leadingMargin" id="dmf-ag-85g"/>
+                                                <constraint firstItem="uNl-5p-t7l" firstAttribute="leading" secondItem="Xbt-ZZ-Qgx" secondAttribute="trailing" constant="8" id="mxR-9D-lco"/>
+                                                <constraint firstItem="Xbt-ZZ-Qgx" firstAttribute="leading" secondItem="6iM-Sk-olZ" secondAttribute="trailing" constant="8" id="nZw-7U-tJK"/>
+                                                <constraint firstItem="RjD-Fg-KtA" firstAttribute="leading" secondItem="6iM-Sk-olZ" secondAttribute="trailing" constant="8" id="r0u-p7-T1V"/>
+                                                <constraint firstItem="6iM-Sk-olZ" firstAttribute="centerY" secondItem="2h8-DS-4kg" secondAttribute="centerY" id="zFA-hx-fPp"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="imgProduct" destination="6iM-Sk-olZ" id="KH8-4D-1oX"/>
+                                            <outlet property="imgSelected" destination="uNl-5p-t7l" id="MDX-PA-UUF"/>
+                                            <outlet property="lblPrice" destination="RjD-Fg-KtA" id="BEH-cm-e5A"/>
+                                            <outlet property="lblProductName" destination="Xbt-ZZ-Qgx" id="fhd-VO-fx8"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                            </tableView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uXb-SN-5hD">
+                                <rect key="frame" x="16" y="690" width="382" height="46"/>
+                                <color key="backgroundColor" red="0.078431372550000003" green="0.3921568627" blue="0.64705882349999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="46" id="1ht-ZD-QB9"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="12"/>
+                                <state key="normal" title="GENERAR CÓDIGO">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="generateCode:" destination="r6I-L5-NCh" eventType="touchUpInside" id="LfT-TC-UmX"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="C5C-Gn-vl8" firstAttribute="leading" secondItem="29T-hF-Tji" secondAttribute="leading" id="2rv-Q8-OjW"/>
+                            <constraint firstItem="jtk-UX-ubB" firstAttribute="leading" secondItem="29T-hF-Tji" secondAttribute="leading" constant="16" id="HPY-Bb-FO0"/>
+                            <constraint firstItem="29T-hF-Tji" firstAttribute="trailing" secondItem="uXb-SN-5hD" secondAttribute="trailing" constant="16" id="IYH-Eg-Xk9"/>
+                            <constraint firstItem="urM-P2-k2m" firstAttribute="leading" secondItem="jtk-UX-ubB" secondAttribute="trailing" constant="8" id="Jex-x4-sWv"/>
+                            <constraint firstItem="C5C-Gn-vl8" firstAttribute="top" secondItem="urM-P2-k2m" secondAttribute="bottom" constant="20" id="KpL-Zd-jzy"/>
+                            <constraint firstItem="29T-hF-Tji" firstAttribute="trailing" secondItem="urM-P2-k2m" secondAttribute="trailing" constant="20" id="Ktp-CF-Evs"/>
+                            <constraint firstItem="uXb-SN-5hD" firstAttribute="leading" secondItem="29T-hF-Tji" secondAttribute="leading" constant="16" id="PmC-AR-s5B"/>
+                            <constraint firstItem="C5C-Gn-vl8" firstAttribute="trailing" secondItem="29T-hF-Tji" secondAttribute="trailing" id="gy7-s5-Z2Z"/>
+                            <constraint firstItem="29T-hF-Tji" firstAttribute="bottom" secondItem="uXb-SN-5hD" secondAttribute="bottom" id="jHq-aw-VF8"/>
+                            <constraint firstItem="C5C-Gn-vl8" firstAttribute="bottom" secondItem="oVj-Ki-bdV" secondAttribute="bottom" id="kkS-Gq-vv2"/>
+                            <constraint firstItem="jtk-UX-ubB" firstAttribute="top" secondItem="29T-hF-Tji" secondAttribute="top" constant="8" id="ozr-We-AQh"/>
+                            <constraint firstItem="urM-P2-k2m" firstAttribute="centerY" secondItem="jtk-UX-ubB" secondAttribute="centerY" id="pZI-A4-uaA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="29T-hF-Tji"/>
+                    </view>
+                    <connections>
+                        <outlet property="btnGenerateCode" destination="uXb-SN-5hD" id="hfg-oH-0eK"/>
+                        <outlet property="tableView" destination="C5C-Gn-vl8" id="7JF-m1-hvZ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wbW-3A-dRg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4637.68115942029" y="2706.521739130435"/>
         </scene>
     </scenes>
     <resources>
@@ -1827,6 +2038,8 @@ Juaréz Ciudad de México</string>
         <image name="backWhite" width="24" height="24"/>
         <image name="box" width="100" height="100"/>
         <image name="card" width="291" height="180"/>
+        <image name="cart" width="32" height="32"/>
+        <image name="champion" width="32" height="32"/>
         <image name="company" width="199" height="152"/>
         <image name="list" width="24" height="24"/>
         <image name="logo" width="144" height="144"/>
@@ -1835,5 +2048,6 @@ Juaréz Ciudad de México</string>
         <image name="previous" width="24" height="24"/>
         <image name="qr" width="32" height="32"/>
         <image name="record" width="100" height="100"/>
+        <image name="seleccion" width="24" height="24"/>
     </resources>
 </document>

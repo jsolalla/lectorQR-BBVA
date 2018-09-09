@@ -16,7 +16,18 @@ class QRViewController: UITableViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "close"), style: .plain, target: self, action: #selector(closeQRPayment))
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "share"), style: .plain, target: self, action: #selector(shareTicket))
+        
         setUpNavigationBar()
+    }
+    
+    @objc func closeQRPayment() {
+        dismiss(animated: true, completion: nil)
+    }
+    
+    @objc func shareTicket() {
+        
     }
     
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {

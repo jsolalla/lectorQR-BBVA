@@ -7,3 +7,21 @@
 //
 
 import Foundation
+
+public enum APIEndPointConfig: String, Equatable {
+    
+    case production = "PRODUCTION"
+    case development = "DEV"
+    
+    public var url: String {
+        
+        if self == .production {
+            return "https://super.walmart.com.mx"
+        }
+        
+        return "https://super-qa.walmart.com.mx"
+    }
+    
+    public static let defaultConfig = APIEndPointConfig.development
+    
+}

@@ -7,11 +7,15 @@
 //
 
 import UIKit
+import RxGesture
+import RxSwift
 
 class PaymentViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var btnGenerateCode: UIButton!
+    
+    let disposeBag = DisposeBag.init()
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .default
@@ -62,8 +66,13 @@ extension PaymentViewController: UITableViewDataSource {
             return cell
         }
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "PaymentProductsTableCell") as! UITableViewCell
-        return cell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "PaymentProductsTableCell")
+        cell?.rx.tapGesture().when(.recognized).subscribe(onNext: { _ in
+            let productsViewController = self.storyboard!.instantiateViewController(withIdentifier: "ProductsViewController") as! ProductsViewController
+            self.navigationController?.pushViewController(productsViewController, animated: true)
+        }).disposed(by: disposeBag)
+        
+        return cell!
     }
     
 }
@@ -71,7 +80,8 @@ extension PaymentViewController: UITableViewDataSource {
 extension PaymentViewController: UITableViewDelegate {
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-       
+        let productsViewController = storyboard!.instantiateViewController(withIdentifier: "ProductsViewController") as! ProductsViewController
+        navigationController?.pushViewController(productsViewController, animated: true)
     }
     
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
@@ -99,11 +109,11 @@ extension PaymentViewController: UITableViewDelegate {
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return  38
+        return 38
     }
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return indexPath.section == 0 ? 135 : 64
+        return indexPath.section == 0 ? 135 : 75
     }
     
     func tableView(_ tableView: UITableView, viewForFooterInSection section: Int) -> UIView? {

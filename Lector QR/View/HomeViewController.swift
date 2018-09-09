@@ -22,6 +22,8 @@ class HomeViewController: UIViewController {
     @IBOutlet weak var viewTransactions: UIView!
     @IBOutlet weak var viewInventory: UIView!
     @IBOutlet weak var viewAccount: UIView!
+    @IBOutlet weak var viewTopSelling: UIView!
+    @IBOutlet weak var viewTopSellers: UIView!
     @IBOutlet weak var scrollView: UIScrollView!
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
@@ -64,6 +66,18 @@ class HomeViewController: UIViewController {
         
         viewInventory.rx.tapGesture().when(.recognized) .subscribe(onNext: { _ in
             self.tapView(self.viewInventory)
+            delay(seconds: 0.2, completion: {
+                let productsViewController = self.storyboard!.instantiateViewController(withIdentifier: "ProductsViewController") as! ProductsViewController
+                self.navigationController?.pushViewController(productsViewController, animated: true)
+            })
+        }).disposed(by: disposeBag)
+        
+        viewTopSelling.rx.tapGesture().when(.recognized) .subscribe(onNext: { _ in
+            self.tapView(self.viewTopSelling)
+        }).disposed(by: disposeBag)
+        
+        viewTopSellers.rx.tapGesture().when(.recognized) .subscribe(onNext: { _ in
+            self.tapView(self.viewTopSellers)
         }).disposed(by: disposeBag)
         
         viewAccount.rx.tapGesture().when(.recognized) .subscribe(onNext: { _ in
@@ -82,6 +96,8 @@ class HomeViewController: UIViewController {
         viewAccounts.dropShadow()
         viewPay.dropShadow()
         viewTransactions.dropShadow()
+        viewTopSellers.dropShadow()
+        viewTopSelling.dropShadow()
         viewInventory.dropShadow()
         viewAccount.dropShadow()
     }
