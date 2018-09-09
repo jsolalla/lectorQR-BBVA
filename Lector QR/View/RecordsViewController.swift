@@ -7,10 +7,16 @@
 //
 
 import UIKit
+import RxSwift
 
 class RecordsViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    
+    let userRepository = UserRepository()
+    let disposeBag = DisposeBag.init()
+    
+    var transactions: [Transaction] = []
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .default
@@ -22,6 +28,19 @@ class RecordsViewController: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        _ = userRepository.getTransactions().bind(onNext: { (resultTransactions) in
+            
+            if case .error(let error) = resultTransactions {
+                self.showAlert("Error", message: error.localizedDescription)
+            }
+            
+            if case .success(let transactionsResponse) = resultTransactions {
+                self.transactions = transactionsResponse
+                self.tableView.reloadData()
+            }
+            
+        })
     }
     
     @IBAction func goBack(_ sender: UIButton) {
@@ -33,12 +52,13 @@ class RecordsViewController: UIViewController {
 extension RecordsViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 20
+        return transactions.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "TransactionTableCell") as! TransactionTableCell
-        cell.isLast = indexPath.row == 19
+        cell.isLast = indexPath.row == (transactions.count - 1)
+        cell.setTransaction(transactions[indexPath.row])
         return cell
     }
     

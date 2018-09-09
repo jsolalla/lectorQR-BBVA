@@ -113,4 +113,37 @@ class UserRepository: BaseRepository {
         }
     }
     
+    func getTransactions() -> Observable<APIResult<[Transaction]>> {
+        
+        return Observable.create { [weak self] observer in
+            
+            if let strongSelf = self {
+                
+                _ = strongSelf.provider.rx.request(.transactions(device: UIDevice.current.identifierForVendor!.uuidString))
+                    .filterSuccessfulStatusCodes()
+                    .mapJSON()
+                    .subscribe { event in
+                        switch event {
+                        case .success(let dict):
+                            
+                            if let productsDict = dict as? [[String:Any]] {
+                                let transactions = productsDict.map { Transaction($0) }
+                                observer.onNext(APIResult.success(transactions))
+                                observer.onCompleted()
+                            } else {
+                                observer.onNext(APIResult.error(strongSelf.getError(for: "Could not parse")))
+                                observer.onCompleted()
+                            }
+                            
+                        case .error(let error):
+                            observer.onNext(APIResult.error(error))
+                            observer.onCompleted()
+                        }
+                }
+            }
+            
+            return Disposables.create()
+        }
+    }
+    
 }

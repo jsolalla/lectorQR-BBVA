@@ -29,5 +29,12 @@ class TransactionTableCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
         // Configure the view for the selected state
     }
+    
+    func setTransaction(_ transaction: Transaction) {
+        lblFolio.text = transaction.id
+        lblAmount.text = "$\(transaction.amount.toString())"
+        lblFromAccount.text = "Cuenta MX * \(String(transaction.clabe.suffix(4)))"
+    }
+    
 
 }
