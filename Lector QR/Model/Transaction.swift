@@ -22,12 +22,17 @@ class Transaction {
     init() {}
     
     init(_ dict: [String:Any]) {
+        
         id = dict["id"] as? String ?? ""
         alfanumerica = dict["alfanumerica"] as? String ?? ""
         amount = dict["amount"] as? Double ?? 0.0
         date = dict["date"] as? Int ?? 0
         telefono = dict["telefono"] as? String ?? ""
-        clabe = dict["clabe"] as? String ?? ""
+        
+        if let account = dict["cuenta"] as? [String:Any] {
+            clabe = account["clabe"] as? String ?? ""
+        }
+        
         idDevice = dict["idDevice"] as? String ?? ""
     }
     

@@ -20,6 +20,10 @@ class AccountDetailTableCell: UITableViewCell {
         // Initialization code
         
         viewAccountDetail.dropShadow()
+        
+        let mobileNumber = Defaults.getBusiness?.number ?? ""
+        lblAccount.text = "Celular \(mobileNumber)"
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

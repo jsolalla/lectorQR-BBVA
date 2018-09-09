@@ -36,5 +36,10 @@ class TransactionTableCell: UITableViewCell {
         lblFromAccount.text = "Cuenta MX * \(String(transaction.clabe.suffix(4)))"
     }
     
+    func clean() {
+        lblFolio.text = ""
+        lblAmount.text = ""
+        lblFromAccount.text = ""
+    }
 
 }

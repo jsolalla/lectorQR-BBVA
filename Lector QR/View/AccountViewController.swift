@@ -7,10 +7,16 @@
 //
 
 import UIKit
+import RxSwift
 
 class AccountViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
+    
+    let userRepository = UserRepository()
+    let disposeBag = DisposeBag.init()
+    
+    var transactions: [Transaction] = []
     
     override var preferredStatusBarStyle: UIStatusBarStyle {
         return .lightContent
@@ -22,6 +28,20 @@ class AccountViewController: UIViewController {
         
         tableView.delegate = self
         tableView.dataSource = self
+        
+        _ = userRepository.getTransactions().bind(onNext: { (resultTransactions) in
+            
+            if case .error(let error) = resultTransactions {
+                self.showAlert("Error", message: error.localizedDescription)
+            }
+            
+            if case .success(let transactionsResponse) = resultTransactions {
+                self.transactions = transactionsResponse
+                self.tableView.reloadData()
+            }
+            
+        })
+        
     }
     
     @IBAction func goBack(_ sender: UIButton) {
@@ -37,18 +57,28 @@ extension AccountViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return section == 0 ? 1 : 10
+        return section == 0 ? 1 : (transactions.count == 0 ? 1 : transactions.count)
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         if indexPath.section == 0 {
             let cell = tableView.dequeueReusableCell(withIdentifier: "AccountDetailTableCell") as! AccountDetailTableCell
+            let total = transactions.map { $0.amount }.reduce(0, +)
+            cell.lblCurrentBalance.text = "$\(total.toString())"
+            return cell
+        }
+        
+        if transactions.count == 0 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "TransactionTableCell") as! TransactionTableCell
+            cell.isLast = true
+            cell.clean()
             return cell
         }
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "TransactionTableCell") as! TransactionTableCell
-        cell.isLast = indexPath.row == 9
+        cell.setTransaction(transactions[indexPath.row])
+        cell.isLast = indexPath.row == (transactions.count - 1)
         return cell
     }
     

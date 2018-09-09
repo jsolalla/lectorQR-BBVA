@@ -145,7 +145,6 @@
 				EA787A6D214375C0007DB83E /* Model */,
 				EA787A6C214375A2007DB83E /* View */,
 				EA787A6B21437592007DB83E /* Repository */,
-				EA10023D21435E600087E439 /* Assets.xcassets */,
 			);
 			path = "Lector QR";
 			sourceTree = "<group>";
@@ -175,6 +174,7 @@
 		EA787A6B21437592007DB83E /* Repository */ = {
 			isa = PBXGroup;
 			children = (
+				EA10023D21435E600087E439 /* Assets.xcassets */,
 				EA5CC9982144D64E00C984BA /* Config */,
 				EA5CC9962144D64100C984BA /* UserRepository.swift */,
 				EA5CC9992144D8F100C984BA /* BaseRepository.swift */,
