@@ -10,7 +10,8 @@ import UIKit
 
 class QRViewController: UITableViewController {
 
-    var products: [Int] = []
+    var products: [Product] = []
+    var amount = 0.0
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -45,20 +46,23 @@ class QRViewController: UITableViewController {
         }
         
         if products.count > 0 {
-            
-        } else {
-            
-            if indexPath.row == 2 {
-                let cell = tableView.dequeueReusableCell(withIdentifier: "QRTotalsTableViewCell", for: indexPath) as! QRTotalsTableViewCell
-                return cell
-            } else {
-                let cell = tableView.dequeueReusableCell(withIdentifier: "QRTableViewCell", for: indexPath) as! QRTableViewCell
+            if (indexPath.row - 2) < products.count {
+                let cell = tableView.dequeueReusableCell(withIdentifier: "QRProductTableViewCell", for: indexPath) as! QRProductTableViewCell
+                let product = products[indexPath.row - 2]
+                cell.setProduct(product)
                 return cell
             }
-            
         }
         
-        return UITableViewCell()
+        if indexPath.row == 2 || indexPath.row == products.count + 2 {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "QRTotalsTableViewCell", for: indexPath) as! QRTotalsTableViewCell
+            cell.setTotals(with: amount, productsCount: products.count)
+            return cell
+        } else {
+            let cell = tableView.dequeueReusableCell(withIdentifier: "QRTableViewCell", for: indexPath) as! QRTableViewCell
+            cell.amount = amount
+            return cell
+        }
         
     }
     
@@ -71,16 +75,16 @@ class QRViewController: UITableViewController {
         }
         
         if products.count > 0 {
-            
-        } else {
-            if indexPath.row == 2 {
-                return 120
-            } else {
-                return 460
+            if (indexPath.row - 2) < products.count {
+               return 35
             }
         }
         
-        return 80
+        if indexPath.row == 2 || indexPath.row == products.count + 2 {
+            return 120
+        } else {
+            return 460
+        }
     }
     
 }

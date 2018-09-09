@@ -15,7 +15,7 @@ class SignUpBusinessViewController: UIViewController {
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var btnSignUp: UIButton!
     
-    let userViewModel = UserViewModel()
+    let userRepository = UserRepository()
     let disposeBag = DisposeBag.init()
     
     var user: User?
@@ -47,7 +47,7 @@ class SignUpBusinessViewController: UIViewController {
         user?.password = txtPassword.text ?? ""
         
         showAsyncActivityIndicator { (activity) in
-            self.userViewModel.signUp(self.user!).bind(onNext: { (resultNewUser) in
+            self.userRepository.signUp(self.user!).bind(onNext: { (resultNewUser) in
                 
                 if case .error(let error) = resultNewUser {
                     self.showAlert("Error", message: error.localizedDescription)

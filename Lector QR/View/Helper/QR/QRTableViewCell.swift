@@ -15,6 +15,8 @@ class QRTableViewCell: UITableViewCell {
     @IBOutlet weak var qrImageView: UIImageView!
     @IBOutlet weak var btnFinalize: UIButton!
     
+    var amount = 0.0
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
@@ -30,7 +32,7 @@ class QRTableViewCell: UITableViewCell {
         let QRDictionary: [String:Any] = ["ot": "0001", "dOp": [["alias": "Pago \(businessName)"],
                                         ["cl": account], ["type": "CL"],
                                         ["refn": "Pago \(businessName)"],
-                                        ["refa": "Pago \(businessName)"], ["amount": "10.00"],
+                                        ["refa": "Pago \(businessName)"], ["amount": "\(amount.toString)"],
                                         ["bank": "00012"], ["country": "MX"], ["currency": "MXN"]]]
         
         if let qrData = try? JSONSerialization.data(withJSONObject: QRDictionary) {

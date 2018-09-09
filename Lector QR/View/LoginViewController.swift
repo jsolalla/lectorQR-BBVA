@@ -16,7 +16,6 @@ class LoginViewController: UIViewController {
     @IBOutlet weak var txtPassword: UITextField!
     @IBOutlet weak var btnLogin: UIButton!
     
-    let userViewModel = UserViewModel()
     let disposeBag = DisposeBag.init()
     
     override func viewDidLoad() {

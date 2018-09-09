@@ -27,6 +27,7 @@
 		EA5CC9932144D1C100C984BA /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5CC9922144D1C100C984BA /* User.swift */; };
 		EA5CC9972144D64100C984BA /* UserRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5CC9962144D64100C984BA /* UserRepository.swift */; };
 		EA5CC99A2144D8F100C984BA /* BaseRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5CC9992144D8F100C984BA /* BaseRepository.swift */; };
+		EA5CC99C2144EFD000C984BA /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA5CC99B2144EFD000C984BA /* Product.swift */; };
 		EA787A7A214388FD007DB83E /* Color.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA787A79214388FD007DB83E /* Color.swift */; };
 		EA787A7C21438904007DB83E /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA787A7B21438904007DB83E /* Constants.swift */; };
 		EA787A7E21438960007DB83E /* API.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA787A7D2143895F007DB83E /* API.swift */; };
@@ -72,6 +73,7 @@
 		EA5CC9922144D1C100C984BA /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		EA5CC9962144D64100C984BA /* UserRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserRepository.swift; sourceTree = "<group>"; };
 		EA5CC9992144D8F100C984BA /* BaseRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseRepository.swift; sourceTree = "<group>"; };
+		EA5CC99B2144EFD000C984BA /* Product.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
 		EA787A79214388FD007DB83E /* Color.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Color.swift; sourceTree = "<group>"; };
 		EA787A7B21438904007DB83E /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		EA787A7D2143895F007DB83E /* API.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = API.swift; sourceTree = "<group>"; };
@@ -202,6 +204,7 @@
 			isa = PBXGroup;
 			children = (
 				EA5CC9922144D1C100C984BA /* User.swift */,
+				EA5CC99B2144EFD000C984BA /* Product.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -402,6 +405,7 @@
 				EA787AA621447F56007DB83E /* PaymentAmountTableCell.swift in Sources */,
 				EA787A9521440762007DB83E /* HomeViewController.swift in Sources */,
 				EA787AA22144712A007DB83E /* PaymentViewController.swift in Sources */,
+				EA5CC99C2144EFD000C984BA /* Product.swift in Sources */,
 				EA5CC9912144C66B00C984BA /* ProductTableViewCell.swift in Sources */,
 				EA5CC98B2144AB6800C984BA /* QREndpoint.swift in Sources */,
 				EA787A8221439890007DB83E /* Defaults.swift in Sources */,

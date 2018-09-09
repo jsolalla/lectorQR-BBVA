@@ -24,5 +24,13 @@ class ProductTableViewCell: UITableViewCell {
         super.setSelected(selected, animated: animated)
         // Configure the view for the selected state
     }
+    
+    func setProduct(_ product: Product, isInventoryView: Bool) {
+        lblProductName.text = product.name
+        lblPrice.text = "$\(product.price)"
+        imgProduct.downloaded(from: product.imageURL)
+        imgSelected.image = UIImage(named: product.selected ? "seleccion" : "seleccionOff")
+        imgSelected.isHidden = isInventoryView
+    }
 
 }

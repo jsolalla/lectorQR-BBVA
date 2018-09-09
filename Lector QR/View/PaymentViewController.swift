@@ -43,7 +43,13 @@ class PaymentViewController: UIViewController {
     }
     
     @IBAction func generateCode(_ sender: UIButton) {
+        
         let navigation = storyboard!.instantiateViewController(withIdentifier: "QRNavigation") as! UINavigationController
+        
+        if let qrPayment = navigation.childViewControllers.first as? QRViewController {
+            
+        }
+        
         self.present(navigation, animated: true, completion: nil)
     }
     

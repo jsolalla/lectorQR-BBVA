@@ -10,9 +10,16 @@ import UIKit
 
 class QRAccountTableViewCell: UITableViewCell {
 
+    @IBOutlet weak var lblTitle: UILabel!
+    
     override func awakeFromNib() {
         super.awakeFromNib()
         // Initialization code
+        
+        if let business = Defaults.getBusiness?.business {
+            lblTitle.text = business
+        }
+        
     }
 
     override func setSelected(_ selected: Bool, animated: Bool) {

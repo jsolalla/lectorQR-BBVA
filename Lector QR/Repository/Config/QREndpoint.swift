@@ -15,6 +15,7 @@ fileprivate let POST_FORM: ParameterEncoding = URLEncoding.httpBody
 
 enum QREndpoint {
     case signUp(user: User)
+    case products(userId: String)
 }
 
 extension QREndpoint: TargetType {
@@ -27,6 +28,8 @@ extension QREndpoint: TargetType {
         switch self {
         case .signUp:
             return "/user"
+        case .products(let userId):
+            return "/producto/user/\(userId)"
         }
     }
     
@@ -34,6 +37,8 @@ extension QREndpoint: TargetType {
         switch self {
         case .signUp:
             return .post
+        default:
+            return .get
         }
     }
     
@@ -52,6 +57,8 @@ extension QREndpoint: TargetType {
                  QRParams.password: user.password,
                  QRParams.accounts: [[QRParams.clabe: user.clabe]]
                 ], encoding: POST_ENCODING)
+        default:
+            return .requestPlain
         }
         
     }
@@ -59,6 +66,5 @@ extension QREndpoint: TargetType {
     var headers: [String : String]? {
         return nil
     }
-    
     
 }

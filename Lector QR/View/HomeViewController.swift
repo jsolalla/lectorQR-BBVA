@@ -68,6 +68,7 @@ class HomeViewController: UIViewController {
             self.tapView(self.viewInventory)
             delay(seconds: 0.2, completion: {
                 let productsViewController = self.storyboard!.instantiateViewController(withIdentifier: "ProductsViewController") as! ProductsViewController
+                productsViewController.isInventoryView = true
                 self.navigationController?.pushViewController(productsViewController, animated: true)
             })
         }).disposed(by: disposeBag)
